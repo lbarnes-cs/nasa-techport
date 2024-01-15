@@ -11,53 +11,48 @@
   "tasks": {
     "build": {
       "name": "build",
-      "command": "yarn build",
+      "command": "pnpm build",
       "runAtStart": false
     },
     "dev": {
       "name": "dev",
-      "command": "yarn dev",
+      "command": "pnpm dev",
       "runAtStart": true
     },
     "generate": {
       "name": "generate",
-      "command": "yarn generate",
+      "command": "pnpm generate",
       "runAtStart": false
     },
     "preview": {
       "name": "preview",
-      "command": "yarn preview",
+      "command": "pnpm preview",
       "runAtStart": false
     },
     "postinstall": {
       "name": "postinstall",
-      "command": "yarn postinstall",
+      "command": "pnpm postinstall",
       "runAtStart": false
     },
     "lint:js": {
       "name": "lint:js",
-      "command": "yarn lint:js",
+      "command": "pnpm lint:js",
       "runAtStart": false
     },
     "lint:prettier": {
       "name": "lint:prettier",
-      "command": "yarn lint:prettier",
+      "command": "pnpm lint:prettier",
       "runAtStart": false
     },
     "lint": {
       "name": "lint",
-      "command": "yarn lint",
+      "command": "pnpm lint",
       "runAtStart": false
     },
     "lintfix": {
       "name": "lintfix",
-      "command": "yarn lintfix",
+      "command": "pnpm lintfix",
       "runAtStart": false
-    },
-    "pnpm dev": {
-      "name": "pnpm dev",
-      "command": "pnpm dev",
-      "runAtStart": true
     }
   }
 }
