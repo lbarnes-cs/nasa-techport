@@ -8,6 +8,7 @@ export default defineNuxtConfig({
     // Keys within public are also exposed client-side
     public: {
       apiBase: "/api",
+      apiKey: "",
     },
   },
 });

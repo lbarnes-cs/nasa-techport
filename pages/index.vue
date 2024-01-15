@@ -15,8 +15,9 @@
 
       <input type="button" value="Refetch" @click="refetch" />
 
-      <div v-if="posts && posts.length" class="wrapper">
-        {{ posts.length }}
+      <div v-if="posts" class="wrapper">
+        <h1>Posts</h1>
+        {{ posts }}
       </div>
     </div>
   </div>
@@ -24,13 +25,17 @@
 
 <script setup>
 import { getCurrentDate } from "@/utils/date";
-
-const token =
-  "eyJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJUZWNoUG9ydCIsImV4cCI6MTcwNTQwMDUxNSwibmJmIjoxNzA1MzE0MTE1LCJTRVNTSU9OX0lEIjoiSUhMeGpzN1NyQ1VzMHBiVGtCckhjNVA3VlZvWGNYS0hqUUJaIiwiRklOR0VSUFJJTlRfSEFTSCI6IjJBRjc0QTY5OThBRTgwMUJBOTYxOUM2REE5ODUyN0FFMzEwRjcwOURDMDI0NDIyNEFBNjRDRTlFNUQ2QzE2RjYifQ.I8dvwp0TajecAuRRwzXCpeYjp--pv6hxBBYpbY7WE5o";
+const config = useRuntimeConfig();
 
 const page = ref(1);
 const maxSearchDate = ref(getCurrentDate());
 const searchDate = ref(getCurrentDate()); // ISO 8601 full-date in the format YYYY-MM-DD
+
+const headers = {
+  // authentication header and jwt here
+  // bearerAuth
+  Authorization: `Bearer  ${config.apiSecret}`,
+};
 
 // https://nuxt.com/docs/api/composables/use-async-data
 const {
@@ -41,19 +46,45 @@ const {
 } = await useAsyncData(
   "posts",
   () =>
-    $fetch("https://techport.nasa.gov/api/projects?updatedSince=2024-01-15", {
-      headers: {
-        // authentication header and jwt here
-        // bearerAuth
-        Authorization: "Bearer " + token,
+    $fetch(
+      `${config.public.apiBase}/projects`,
+      {
+        query: {
+          updatedSince: "2024-01-13",
+          apiKey: config.public.apiKey,
+        },
       },
-      params: {
-        updatedSince: searchDate.value,
+      {
+        headers,
+        params: {
+          updatedSince: searchDate.value,
+        },
+        immediate: false,
       },
-      immediate: false,
-    }),
+    ),
   {
     watch: [page, searchDate],
   },
 );
+
+// const dataTwice = await $fetch(
+//   `${config.public.apiBase}/projects?updatedSince=2024-01-14&api_key=${config.public.apiKey}`,
+//   {},
+// );
+
+// const {
+//   data: posts,
+//   error,
+//   pending,
+//   refetch,
+// } = await useFetch(
+//   `${config.public.apiBase}/projects`,
+//   {
+//     query: {
+//       updatedSince: "2024-01-13",
+//       apiKey: config.public.apiKey,
+//     },
+//   },
+//   { headers },
+// );
 </script>
