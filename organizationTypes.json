@@ -1,0 +1,149 @@
+{
+  "organizationTypes": [
+    {
+      "name": "NASA",
+      "hasChildren": true,
+      "level": 1
+    },
+    {
+      "name": "NASA Center",
+      "hasChildren": false,
+      "level": 2
+    },
+    {
+      "name": "NASA Facility",
+      "hasChildren": false,
+      "level": 2
+    },
+    {
+      "name": "NASA Mission",
+      "hasChildren": false,
+      "level": 2
+    },
+    {
+      "name": "NASA Mission Directorate",
+      "hasChildren": false,
+      "level": 2
+    },
+    {
+      "name": "NASA Office",
+      "hasChildren": false,
+      "level": 2
+    },
+    {
+      "name": "NASA Program",
+      "hasChildren": false,
+      "level": 2
+    },
+    {
+      "name": "NASA Other",
+      "hasChildren": false,
+      "level": 2
+    },
+    {
+      "name": "Academia",
+      "hasChildren": true,
+      "level": 1
+    },
+    {
+      "name": "Minority Serving Institution",
+      "hasChildren": false,
+      "level": 2
+    },
+    {
+      "name": "Other Institution",
+      "hasChildren": false,
+      "level": 2
+    },
+    {
+      "name": "Alaska Native and Native Hawaiian Serving Institutions (ANNH)",
+      "hasChildren": false,
+      "level": 3
+    },
+    {
+      "name": "Asian American Native American Pacific Islander (AANAPISI)",
+      "hasChildren": false,
+      "level": 3
+    },
+    {
+      "name": "Hispanic Serving Institutions (HSI)",
+      "hasChildren": false,
+      "level": 3
+    },
+    {
+      "name": "Historically Black Colleges and Universities (HBCU)",
+      "hasChildren": false,
+      "level": 3
+    },
+    {
+      "name": "Native American Serving Non-Tribal Institutions (NASNTI)",
+      "hasChildren": false,
+      "level": 3
+    },
+    {
+      "name": "Predominately Black Institutions (PBI)",
+      "hasChildren": false,
+      "level": 3
+    },
+    {
+      "name": "Tribal Colleges and Universities (TCU)",
+      "hasChildren": false,
+      "level": 3
+    },
+    {
+      "name": "Industry",
+      "hasChildren": true,
+      "level": 1
+    },
+    {
+      "name": "Historically Underutilized Business Zones (HUBZones)",
+      "hasChildren": false,
+      "level": 2
+    },
+    {
+      "name": "Minority-Owned Business",
+      "hasChildren": false,
+      "level": 2
+    },
+    {
+      "name": "Small Disadvantaged Business (SDB)",
+      "hasChildren": false,
+      "level": 2
+    },
+    {
+      "name": "Veteran-Owned Small Business (VOSB)",
+      "hasChildren": false,
+      "level": 2
+    },
+    {
+      "name": "Women-Owned Small Business (WOSB)",
+      "hasChildren": false,
+      "level": 2
+    },
+    {
+      "name": "Other Industry",
+      "hasChildren": false,
+      "level": 2
+    },
+    {
+      "name": "International Space Agency",
+      "hasChildren": false,
+      "level": 1
+    },
+    {
+      "name": "Non-Profit Institution",
+      "hasChildren": false,
+      "level": 1
+    },
+    {
+      "name": "FFRDC/UARC",
+      "hasChildren": false,
+      "level": 1
+    },
+    {
+      "name": "Other US Government",
+      "hasChildren": false,
+      "level": 1
+    }
+  ]
+}
