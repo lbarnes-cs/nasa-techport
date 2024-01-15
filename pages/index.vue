@@ -46,7 +46,7 @@ const searchDate = ref(getPreviousDate(7));
 const headers = {
   // authentication header and jwt here
   // bearerAuth
-  Authorization: `Bearer ${config.apiSecret}`,
+  Authorization: `Bearer ${config.public.apiToken}`,
 };
 
 // https://nuxt.com/docs/api/composables/use-async-data
