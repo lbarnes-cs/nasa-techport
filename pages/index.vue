@@ -1,6 +1,6 @@
 <template>
   <div>
-    <h1>Projects</h1>
+    <h1>NASA Project search</h1>
 
     <div v-if="error">Error: {{ error }}</div>
     <div v-else-if="pending">pending</div>
@@ -17,11 +17,11 @@
 
       <input type="button" value="Refetch" @click="refetch" />
 
-      <div v-if="projects" class="wrapper">
-        {{ projects }}
+      <div v-if="searchProjects" class="wrapper">
+        <h2>Total projects found: {{ searchProjects.totalCount }}</h2>
 
         <div
-          v-for="project in projects"
+          v-for="project in searchProjects.projects"
           :key="project.projectId"
           class="projects"
         >
@@ -46,12 +46,12 @@ const searchDate = ref(getPreviousDate(7));
 const headers = {
   // authentication header and jwt here
   // bearerAuth
-  Authorization: `Bearer  ${config.apiSecret}`,
+  Authorization: `Bearer ${config.apiSecret}`,
 };
 
 // https://nuxt.com/docs/api/composables/use-async-data
 const {
-  data: projects,
+  data: searchProjects,
   error,
   pending,
   refetch,
@@ -100,7 +100,7 @@ const {
 
 <style lang="scss" scoped>
 .projects {
-  display: flex;
+  display: grid;
 
   .project {
     max-width: 200px;
