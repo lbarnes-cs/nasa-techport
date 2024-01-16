@@ -1,0 +1,10 @@
+:root {
+  --space-base: 16px;
+  --spacing-xs: calc(var(--space-base) * 0.25); // 4
+  --spacing-sm: calc(var(--space-base) * 0.5); // 8
+  --spacing: calc(var(--space-base) * 1); // 16
+  --spacing-md: calc(var(--space-base) * 1.25); // 20
+  --spacing-lg: calc(var(--space-base) * 1.5); // 24
+
+  --border-radius: var(--spacing-sm);
+}

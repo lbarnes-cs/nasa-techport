@@ -1,0 +1,32 @@
+:root {
+  --primary: #0b3d91;
+  --accent: #fc3d21;
+  --primary800: #1459b0;
+  --primary700: #186ac2;
+  --primary600: #1d7bd5;
+  --primary500: #2089e2;
+  --primary400: #4099e7;
+  --primary300: #60abea;
+  --primary200: #8dc2f1;
+  --primary100: #b9d9f6;
+  --primary50: #e2f0fb;
+
+  --shade900: #1c1c1c;
+  --shade800: #3c3c3c;
+  --shade700: #5b5b5b;
+  --shade600: #6f6f6f;
+  --shade500: #979797;
+  --shade400: #b7b7b7;
+  --shade300: #dadada;
+  --shade200: #eaeaea;
+  --shade100: #f3f3f3;
+  --shade50: #ffffff;
+
+  --error: #ff6444;
+
+  --text: var(--shade800);
+  --header: var(--shade900);
+  --background: var(--primary50);
+  --sidebar: var(--primary50);
+  --border: var(--shade500);
+}

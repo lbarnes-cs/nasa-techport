@@ -2,6 +2,11 @@
 
 Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
 
+## Futher changes
+
+**Improved security**
+At the moment, we print all the fields that we get from the JSON object, blindly trusting what the content is. This has the potential for a XSS attack. We should introduce a plugin such as [vue-dompurify-html](https://github.com/LeSuisse/vue-dompurify-html/) with a white-list of HTML elements.
+
 ## Setup
 
 Make sure to install the dependencies:

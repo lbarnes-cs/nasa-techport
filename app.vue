@@ -1,11 +1,22 @@
 <template>
   <NuxtLayout>
-    <NuxtPage />
+    <div v-if="checkForMissingToken()">
+      <h1>Error: Missing API Token</h1>
+      <setApiToken />
+    </div>
+    <NuxtPage v-else />
   </NuxtLayout>
 </template>
 
 <script setup>
+import { checkIfApiTokenExists } from '@/utils/apiToken';
+import setApiToken from '@/components/missingToken/setApiToken';
 // import { ofetch } from 'ofetch'
 
 // globalThis.$fetch = ofetch.create({ baseUrl: '', onRequest: () => {}, ... })
+const config = useRuntimeConfig();
+
+const checkForMissingToken = () => {
+  return !checkIfApiTokenExists(config);
+};
 </script>
