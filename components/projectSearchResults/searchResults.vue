@@ -28,12 +28,12 @@ defineProps<{
 <style lang="scss" scoped>
 .searchResults {
   &__title {
-    margin: 0 0 8px;
+    margin: 0 0 var(--spacing);
   }
 
   &__results {
     display: grid;
-    gap: 8px;
+    gap: var(--spacing);
     grid-template-columns: repeat(3, 1fr);
   }
 }

@@ -8,9 +8,15 @@
     }"
     class="projectSummaryCard"
   >
-    <p>{{ title || 'Unknown Title' }}</p>
-    <p>Project Number: {{ projectId }}</p>
-    <p>Last updated: {{ lastUpdated }}</p>
+    <p class="projectSummaryCard__title">{{ title || 'Unknown Title' }}</p>
+
+    <div class="projectSummaryCard__summary">
+      Project Number: <span>{{ projectId }}</span>
+    </div>
+
+    <div class="projectSummaryCard__summary">
+      Last updated: <span>{{ lastUpdated }}</span>
+    </div>
   </nuxt-link>
 </template>
 
@@ -24,8 +30,8 @@ const props = defineProps<ProjectSummary>();
 
 <style lang="scss" scoped>
 .projectSummaryCard {
-  padding: 4px;
-  border-radius: 4px;
+  padding: var(--spacing-sm);
+  border-radius: var(--border-radius);
   border: 1px #ccc solid;
   text-decoration: none;
   color: inherit;
@@ -36,7 +42,20 @@ const props = defineProps<ProjectSummary>();
   }
 
   &:hover {
-    box-shadow: 0 0 6px rgba(33, 33, 33, 0.2);
+    box-shadow: var(--box-shadow);
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 1em;
+    padding: 0 0 var(--spacing-sm);
+  }
+
+  &__summary {
+    display: flex;
+    justify-content: space-between;
+    color: var(--text-secondary);
+    font-weight: 300;
   }
 }
 </style>
