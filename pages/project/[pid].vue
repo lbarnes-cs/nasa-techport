@@ -22,23 +22,50 @@
 
       <main class="projectInfo">
         <article class="projectInfo__main">
-          <p>Title: {{ post.project.title }}</p>
-          <p>Status: {{ post.project.statusDescription }}</p>
+          <p v-if="post?.project?.program?.title" class="projectInfo__headline">
+            {{ post?.project?.program?.title }}
+          </p>
 
-          <p>Lead: {{ post.project.leadOrganization }}</p>
+          <div class="projectInfo__title">
+            <h1 class="">{{ post.project.title }}</h1>
+
+            <span
+              :class="[
+                'projectStatus',
+                `projectStatus--${post.project.statusDescription.toLowerCase()}`,
+              ]"
+            >
+              <IconCSS
+                class="projectStatus__icon"
+                :name="getStatusIcon(post.project.statusDescription)"
+              />
+              {{ post.project.statusDescription }}
+            </span>
+          </div>
+
+          <h2>Description:</h2>
+          <p v-html="post?.project?.description" />
+
+          <h2>Benefits</h2>
+          <p v-html="post?.project?.benefits" />
         </article>
 
         <div class="projectInfo__sidebar">
           <aside>
-            <h2>Project Summary</h2>
+            <h3>Project Summary</h3>
             <dl class="twoColumns">
               <dt>Views:</dt>
               <dd>
                 {{ post.project.viewCount }}
               </dd>
 
+              <dt>Last updated:</dt>
+              <dd>
+                {{ post.project.lastUpdated }}
+              </dd>
+
               <dt>Start date:</dt>
-              <dd f>{{ post.project.startDateString }}</dd>
+              <dd>{{ post.project.startDateString }}</dd>
 
               <dt v-if="post.project.statusDescription === 'Completed'">
                 Completion date:
@@ -46,66 +73,60 @@
               <dd v-if="post.project.statusDescription === 'Completed'">
                 {{ post.project.endDateString }}
               </dd>
-
-              <dt>Last updated:</dt>
-              <dd>{{ post.project.lastUpdated }}</dd>
             </dl>
           </aside>
 
           <aside>
-            <h2>Project Management</h2>
+            <h3>Organizational Responsibility</h3>
+
             <dl>
-              <dt>Program Manager:</dt>
+              <dt>Responsible Mission Directorate:</dt>
               <dd>
-                <a
-                  v-for="(contact, index) in getContactInfo(
-                    post?.project?.programManagers,
-                  )"
-                  :key="index"
-                  :href="`mailto://${contact.email}`"
-                  class="projectInfo__link"
-                  >{{ contact.name }}</a
-                >
+                {{ post?.project?.responsibleMd?.organizationName }}
+                <template v-if="post?.project?.responsibleMd?.acronym">
+                  ({{ post?.project?.responsibleMd?.acronym }})
+                </template>
               </dd>
 
-              <dt>Project Managers:</dt>
+              <dt>Lead Center / Facility:</dt>
               <dd>
-                <a
-                  v-for="(contact, index) in getContactInfo(
-                    post?.project?.projectManagers,
-                  )"
-                  :key="index"
-                  :href="`mailto://${contact.email}`"
-                  class="projectInfo__link"
-                  >{{ contact.name }}</a
-                >
+                {{ post?.project?.leadOrganization?.organizationName }}
+                <template v-if="post?.project?.leadOrganization?.acronym">
+                  ({{ post?.project?.leadOrganization?.acronym }})
+                </template>
               </dd>
 
-              <dt>Principal Investigator:</dt>
-              <dd>
-                <a
-                  v-for="(contact, index) in getContactInfo(
-                    post?.project?.principalInvestigators,
-                  )"
-                  :key="index"
-                  :href="`mailto://${contact.email}`"
-                  class="projectInfo__link"
-                  >{{ contact.name }}</a
-                >
-              </dd>
+              <dt>Responsible Program:</dt>
+              <dd>{{ post?.project?.program?.title }}</dd>
+            </dl>
+          </aside>
 
-              <dt>Co-Investigators:</dt>
-              <dd>
-                <a
-                  v-for="(contact, index) in getContactInfo(
-                    post?.project?.coInvestigators,
-                  )"
-                  :key="index"
-                  :href="`mailto://${contact.email}`"
-                  class="projectInfo__link"
-                  >{{ contact.name }}</a
-                >
-              </dd>
+          <aside>
+            <h3>Project Management</h3>
+            <dl>
+              <contactInformation
+                v-if="post?.project?.programManagers"
+                title="Program Manager"
+                :contacts="post?.project?.programManagers"
+              />
+
+              <contactInformation
+                v-if="post?.project?.programManagers"
+                title="Project Managers"
+                :contacts="post?.project?.programManagers"
+              />
+
+              <contactInformation
+                v-if="post?.project?.principalInvestigators"
+                title="Principal Investigator"
+                :contacts="post?.project?.principalInvestigators"
+              />
+
+              <contactInformation
+                v-if="post?.project?.coInvestigators"
+                title="Co-Investigators"
+                :contacts="post?.project?.coInvestigators"
+              />
             </dl>
           </aside>
         </div>
@@ -116,13 +137,14 @@
 
 <script setup>
 import { getBearerToken } from '@/utils/apiToken';
+
+import contactInformation from '@/components/sidebar/contactInformation';
+
 const config = useRuntimeConfig();
 
 const pid = useRoute().params.pid;
 
 const headers = {
-  // authentication header and jwt here
-  // bearerAuth
   Authorization: `Bearer ${getBearerToken(config)}`,
 };
 
@@ -132,7 +154,6 @@ const {
   pending,
 } = await useFetch(
   `/api/projects/${pid}`,
-  // `${config.public.apiBase}/projects/${pid}`,
   { query: { apiKey: config.public.apiKey } },
   {
     headers,
@@ -140,17 +161,15 @@ const {
   },
 );
 
-const getContactInfo = (contacts) => {
-  if (!contacts.length) {
-    return [{ name: 'Unknown contact' }];
+const getStatusIcon = (status) => {
+  switch (status) {
+    case 'Completed':
+      return 'streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form';
+    case 'Canceled':
+      return 'streamline:interface-delete-circle-button-delete-remove-add-circle-buttons';
+    default:
+      return 'streamline:interface-time-reset-time-clock-reset-stopwatch-circle-measure-loading';
   }
-
-  return contacts.map((contact) => {
-    return {
-      name: contact.fullName,
-      email: contact.primaryEmail,
-    };
-  });
 };
 </script>
 
@@ -159,8 +178,24 @@ const getContactInfo = (contacts) => {
   display: flex;
   gap: var(--spacing-md);
 
+  article {
+    flex: 1;
+  }
+
+  &__headline {
+    font-weight: 700;
+    margin: 0;
+  }
+
+  &__title {
+    margin-top: var(--spacing-xs);
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
   &__sidebar {
-    min-width: 250px;
+    width: 250px;
     padding: var(--spacing-sm);
     background: var(--sidebar);
     border-radius: var(--border-radius);
@@ -176,18 +211,36 @@ const getContactInfo = (contacts) => {
         padding-top: var(--spacing-xs);
       }
 
-      h2 {
+      h3 {
         margin: 0 0 var(--spacing-md);
       }
     }
   }
+}
 
-  &__link {
-    display: inline-block;
+.projectStatus {
+  border-radius: var(--border-radius);
+  color: var(--white);
+  padding: var(--spacing-xs) var(--spacing-sm);
+  display: inline-flex;
+  align-items: center;
+  font-weight: 400;
+  margin-left: var(--spacing-md);
 
-    &:not(:first-of-type) {
-      margin-top: var(--spacing-xs);
-    }
+  &--active {
+    background: var(--status-active);
+  }
+
+  &--completed {
+    background: var(--status-completed);
+  }
+
+  &--canceled {
+    background: var(--status-canceled);
+  }
+
+  &__icon {
+    margin-right: var(--spacing-xs);
   }
 }
 
@@ -197,11 +250,11 @@ dl {
   grid-template-columns: auto;
   margin: 0;
 
-  dt {
+  :deep(dt) {
     font-weight: bold;
   }
 
-  dd {
+  :deep(dd) {
     margin: 0 0 var(--spacing-sm);
     grid-column-start: 1;
   }

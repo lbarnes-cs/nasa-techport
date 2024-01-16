@@ -55,36 +55,10 @@ type Destination = {
   lkuCodeType: LkuCodeType;
 };
 
-type PrincipalInvestigator = {
+export type managerContactInformation = {
   contactId: number;
   canUserEdit: boolean;
-  displayOrder: number;
-  firstName: string;
-  lastName: string;
-  fullName: string;
-  fullNameInverted: string;
-  primaryEmail: string;
-  publicEmail: boolean;
-  nacontact: boolean;
-};
-
-type ProgramManager = {
-  contactId: number;
-  canUserEdit: boolean;
-  firstName: string;
-  lastName: string;
-  fullName: string;
-  fullNameInverted: string;
-  middleInitial: string;
-  primaryEmail: string;
-  publicEmail: boolean;
-  nacontact: boolean;
-};
-
-type ProjectManager = {
-  contactId: number;
-  canUserEdit: boolean;
-  displayOrder: number;
+  displayOrder?: number;
   firstName: string;
   lastName: string;
   fullName: string;
@@ -215,9 +189,9 @@ export type ProjectItemType = {
   endYear: number;
   endMonth: number;
   statusDescription: string;
-  principalInvestigators: PrincipalInvestigator[];
-  programManagers: ProgramManager[];
-  projectManagers: ProjectManager[];
+  principalInvestigators: managerContactInformation[];
+  programManagers: managerContactInformation[];
+  projectManagers: managerContactInformation[];
   website: string;
   libraryItems: LibraryItem[];
   transitions: any[];

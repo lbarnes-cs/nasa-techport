@@ -1,0 +1,270 @@
+{
+  "project": {
+    "acronym": "OASIC",
+    "projectId": 146755,
+    "title": "Spaceflight Compatible Optical Atomic Strontium Ion Clock",
+    "primaryTaxonomyNodes": [
+      {
+        "taxonomyNodeId": 10645,
+        "taxonomyRootId": 8816,
+        "level": 1,
+        "code": "TX05",
+        "title": "Communications, Navigation, and Orbital Debris Tracking and Characterization Systems",
+        "definition": "Space communications and navigation infrastructure is the means of transferring commands, spacecraft telemetry, mission data, and voice for human exploration missions, while maintaining accurate timing and providing navigation support. Orbital debris can be tracked and characterized by some of the same systems used for spacecraft communications and navigation, as well as by other specialized systems. Orbital debris tracking and characterization systems can be improved using radio frequency and optical techniques similar to those used in communications and navigation systems, as well as other dedicated systems.",
+        "hasChildren": false,
+        "hasInteriorContent": true
+      }
+    ],
+    "startTrl": 1,
+    "currentTrl": 1,
+    "endTrl": 2,
+    "benefits": "<p>OASIC leverages high accuracy timing and exquisite stability provided by optical atomic clocks in a simple, robust package. OASIC can be utilized for LunaNet, a proposed lunar navigation and communications system for Artemis Astronauts, and can be used for deep space autonomous navigation. </p> ",
+    "description": "<p>Optical atomic clocks are critical tools for NASA missions as they enable autonomous navigation, planetary science, and can be used to establish lunar timing networks. We are developing an Optical Atomic Strontium Ion Clock (OASIC), which is a simple, robust, spaceflight compatible high performance atomic clock. </p> ",
+    "destinations": [
+      {
+        "lkuCodeId": 1544,
+        "code": "MOON_AND_CISLUNAR",
+        "description": "Moon and Cislunar",
+        "lkuCodeTypeId": 526,
+        "lkuCodeType": {
+          "codeType": "DESTINATION_TYPE",
+          "description": "Destination Type"
+        }
+      },
+      {
+        "lkuCodeId": 1862,
+        "code": "LOW_EARTH_ORBIT",
+        "description": "Low Earth Orbit",
+        "lkuCodeTypeId": 526,
+        "lkuCodeType": {
+          "codeType": "DESTINATION_TYPE",
+          "description": "Destination Type"
+        }
+      }
+    ],
+    "startYear": 2023,
+    "startMonth": 10,
+    "endYear": 2024,
+    "endMonth": 9,
+    "statusDescription": "Active",
+    "principalInvestigators": [
+      {
+        "contactId": 2010079,
+        "canUserEdit": false,
+        "displayOrder": 1,
+        "firstName": "Holly",
+        "lastName": "Leopardi",
+        "fullName": "Holly F Leopardi",
+        "fullNameInverted": "Leopardi, Holly F",
+        "middleInitial": "F",
+        "primaryEmail": "holly.f.leopardi@nasa.gov",
+        "publicEmail": true,
+        "nacontact": false
+      }
+    ],
+    "programManagers": [
+      {
+        "contactId": 373483,
+        "canUserEdit": false,
+        "firstName": "Peter",
+        "lastName": "Hughes",
+        "fullName": "Peter M Hughes",
+        "fullNameInverted": "Hughes, Peter M",
+        "middleInitial": "M",
+        "primaryEmail": "peter.m.hughes@nasa.gov",
+        "publicEmail": true,
+        "nacontact": false
+      }
+    ],
+    "projectManagers": [
+      {
+        "contactId": 506527,
+        "canUserEdit": false,
+        "displayOrder": 1,
+        "firstName": "Michael",
+        "lastName": "Johnson",
+        "fullName": "Michael A Johnson",
+        "fullNameInverted": "Johnson, Michael A",
+        "middleInitial": "A",
+        "primaryEmail": "michael.a.johnson@nasa.gov",
+        "publicEmail": true,
+        "nacontact": false
+      }
+    ],
+    "website": "https://etd.gsfc.nasa.gov/",
+    "libraryItems": [
+      {
+        "caption": "Example Strontium ion clock. Image Credit:NIST",
+        "file": {
+          "fileExtension": "jpg",
+          "fileId": 267686,
+          "fileName": "clock with scale ",
+          "fileSize": 305594,
+          "objectId": 268482,
+          "objectType": {
+            "lkuCodeId": 889,
+            "code": "LIBRARY_ITEMS",
+            "description": "Library Items",
+            "lkuCodeTypeId": 182,
+            "lkuCodeType": {
+              "codeType": "OBJECT_TYPE",
+              "description": "Object Type"
+            }
+          },
+          "objectTypeId": 889,
+          "fileSizeString": "298.4 KB"
+        },
+        "files": [
+          {
+            "fileExtension": "jpg",
+            "fileId": 267686,
+            "fileName": "clock with scale ",
+            "fileSize": 305594,
+            "objectId": 268482,
+            "objectType": {
+              "lkuCodeId": 889,
+              "code": "LIBRARY_ITEMS",
+              "description": "Library Items",
+              "lkuCodeTypeId": 182,
+              "lkuCodeType": {
+                "codeType": "OBJECT_TYPE",
+                "description": "Object Type"
+              }
+            },
+            "objectTypeId": 889,
+            "fileSizeString": "298.4 KB"
+          }
+        ],
+        "id": 268482,
+        "title": "Example Strontium Ion Clock ",
+        "description": "Example Strontium ion clock. Image Credit:NIST",
+        "libraryItemTypeId": 1095,
+        "projectId": 146755,
+        "primary": true,
+        "publishedDateString": "",
+        "contentType": {
+          "lkuCodeId": 1095,
+          "code": "IMAGE",
+          "description": "Image",
+          "lkuCodeTypeId": 341,
+          "lkuCodeType": {
+            "codeType": "LIBRARY_ITEM_TYPE",
+            "description": "Library Item Type"
+          }
+        }
+      }
+    ],
+    "transitions": [],
+    "primaryImage": {
+      "file": {
+        "fileExtension": "jpg",
+        "fileId": 267686,
+        "fileSizeString": "0 Byte"
+      },
+      "id": 268482,
+      "description": "Example Strontium ion clock. Image Credit:NIST",
+      "projectId": 146755,
+      "publishedDateString": ""
+    },
+    "responsibleMd": {
+      "acronym": "MSD",
+      "canUserEdit": false,
+      "city": "",
+      "external": false,
+      "linkCount": 0,
+      "organizationId": 4910,
+      "organizationName": "Mission Support Directorate",
+      "organizationType": "NASA_Mission_Directorate",
+      "naorganization": false,
+      "organizationTypePretty": "NASA Mission Directorate"
+    },
+    "program": {
+      "acronym": "GSFC IRAD",
+      "active": true,
+      "description": "<p>Goddard&#39;s IRAD program is managed under Goddard&#39;s Office of Chief Technologist.&nbsp; Activities are coordinated in collaboration with the Sciences and Exploration Directorate; Applied Engineering and Technology Directorate; Flight Projects Directorate; Wallops Flight Facility; New Opportunites Office; SBIR/STTR program; Goddard Strategic Partnerships Office; and the Export Compliance Office.</p><p>IRAD provides&quot;seed funding&quot; to develop concepts, reduce technology risk, and advance human capital and technological capabilities.&nbsp; The program is highly competitive, opportunity-driven, and 100% strategically aligned with NASA&#39;s and GSFC&#39;s strategic priorities.&nbsp; A significant portion of the program is focused on Early Stage Innovations for high-risk, strategically aligned, potential high-payoff technologies that are longer-term or lower TRL.</p>",
+      "parentProgram": {
+        "acronym": "IRAD",
+        "active": true,
+        "programId": 87,
+        "responsibleMd": {
+          "acronym": "MSD",
+          "canUserEdit": false,
+          "city": "",
+          "external": false,
+          "linkCount": 0,
+          "organizationId": 4910,
+          "organizationName": "Mission Support Directorate",
+          "organizationType": "NASA_Mission_Directorate",
+          "naorganization": false,
+          "organizationTypePretty": "NASA Mission Directorate"
+        },
+        "responsibleMdId": 4910,
+        "title": "Center Independent Research & Development"
+      },
+      "parentProgramId": 87,
+      "programId": 153,
+      "responsibleMd": {
+        "acronym": "MSD",
+        "canUserEdit": false,
+        "city": "",
+        "external": false,
+        "linkCount": 0,
+        "organizationId": 4910,
+        "organizationName": "Mission Support Directorate",
+        "organizationType": "NASA_Mission_Directorate",
+        "naorganization": false,
+        "organizationTypePretty": "NASA Mission Directorate"
+      },
+      "responsibleMdId": 4910,
+      "title": "Center Independent Research & Development: GSFC IRAD"
+    },
+    "leadOrganization": {
+      "acronym": "GSFC",
+      "canUserEdit": false,
+      "city": "Greenbelt",
+      "country": {
+        "abbreviation": "US",
+        "countryId": 236,
+        "name": "United States"
+      },
+      "countryId": 236,
+      "external": false,
+      "linkCount": 0,
+      "organizationId": 4947,
+      "organizationName": "Goddard Space Flight Center",
+      "organizationType": "NASA_Center",
+      "stateTerritory": {
+        "abbreviation": "MD",
+        "country": {
+          "abbreviation": "US",
+          "countryId": 236,
+          "name": "United States"
+        },
+        "countryId": 236,
+        "name": "Maryland",
+        "stateTerritoryId": 3
+      },
+      "stateTerritoryId": 3,
+      "naorganization": false,
+      "organizationTypePretty": "NASA Center"
+    },
+    "statesWithWork": [
+      {
+        "abbreviation": "MD",
+        "country": {
+          "abbreviation": "US",
+          "countryId": 236,
+          "name": "United States"
+        },
+        "countryId": 236,
+        "name": "Maryland",
+        "stateTerritoryId": 3
+      }
+    ],
+    "lastUpdated": "2024-1-14",
+    "releaseStatusString": "Released",
+    "viewCount": 3,
+    "endDateString": "Sep 2024",
+    "startDateString": "Oct 2023"
+  }
+}

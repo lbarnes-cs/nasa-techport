@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ['@vee-validate/nuxt', '@nuxtjs/google-fonts'],
+  modules: ['@vee-validate/nuxt', '@nuxtjs/google-fonts', 'nuxt-icon'],
 
   css: ['~/assets/styles/main.scss'],
 
@@ -28,7 +28,7 @@ export default defineNuxtConfig({
 
   googleFonts: {
     families: {
-      Roboto: [400, 700],
+      Roboto: [400, 500, 700],
       Inter: [400, 700],
     },
   },

@@ -23,6 +23,11 @@
   --shade50: #ffffff;
 
   --error: #ff6444;
+  --white: var(--shade50);
+
+  --status-active: var(--primary500);
+  --status-completed: #7cb342;
+  --status-canceled: #ff8265;
 
   --text: var(--shade800);
   --header: var(--shade900);

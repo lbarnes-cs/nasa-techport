@@ -1,9 +1,10 @@
 @import './_colorGuide.scss';
 @import './_spacing.scss';
 
-* {
+html {
   color: var(--text);
   font-family: 'Roboto', sans-serif;
+  font-size: 0.8em;
 }
 
 a {
