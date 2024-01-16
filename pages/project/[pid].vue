@@ -131,7 +131,8 @@ const {
   error,
   pending,
 } = await useFetch(
-  `${config.public.apiBase}/projects/${pid}`,
+  `/api/projects/${pid}`,
+  // `${config.public.apiBase}/projects/${pid}`,
   { query: { apiKey: config.public.apiKey } },
   {
     headers,

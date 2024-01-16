@@ -85,7 +85,8 @@ const {
   pending,
   refetch,
 } = await useFetch(
-  `${config.public.apiBase}/projects`,
+  `/api/projects`,
+  // `${config.public.apiBase}/projects`,
   {
     query: {
       updatedSince: searchDate.value,

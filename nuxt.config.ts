@@ -30,7 +30,18 @@ export default defineNuxtConfig({
     families: {
       Roboto: [400, 700],
       Inter: [400, 700],
-      // Lato: [100, 300],
+    },
+  },
+
+  routeRules: {
+    '/api/**': {
+      proxy: { to: 'https://techport.nasa.gov/api/**' },
+    },
+  },
+
+  vue: {
+    compilerOptions: {
+      isCustomElement: (tag) => ['clearApiToken'].includes(tag),
     },
   },
 });
