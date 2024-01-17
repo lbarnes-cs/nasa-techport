@@ -21,7 +21,7 @@ import type { ProjectSummary } from '@/types/ProjectSearchResponse';
 
 defineProps<{
   projects?: Array<ProjectSummary>;
-  totalCount: Number;
+  totalCount?: Number;
 }>();
 </script>
 

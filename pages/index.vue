@@ -4,8 +4,6 @@
 
     <div v-if="error">
       <p>{{ error }}</p>
-
-      <clearApiToken />
     </div>
 
     <div v-else-if="pending">pending</div>
@@ -20,79 +18,77 @@
         :max="maxSearchDate"
       />
 
-      <input type="button" value="Refetch" @click="refetch" />
+      <button @click="handleSearch">
+        <IconCSS
+          class="icon"
+          name="streamline:interface-edit-zoom-in-enhance-glass-in-magnify-magnifying-zoom"
+        />
+      </button>
 
       <searchResults v-if="searchProjects" v-bind="searchProjects" />
     </div>
   </div>
 </template>
 
-<script setup>
+<script setup lang="ts">
+import type {
+  ProjectSummary,
+  ProjectsResponseBody,
+} from '@/types/ProjectSearchResponse';
+
 import { getCurrentDate, getPreviousDate } from '@/utils/date';
 import { getBearerToken } from '@/utils/apiToken';
 
 import searchResults from '@/components/projectSearchResults/searchResults.vue';
-import clearApiToken from '@/components/missingToken/clearApiToken';
 
 const config = useRuntimeConfig();
 
-const page = ref(1);
-const maxSearchDate = ref(getCurrentDate());
+const currentPage = ref<number>(1);
+const previousPage = ref<number>(0);
+const nextPage = ref<number>(0);
+const paginatedItems = ref<ProjectSummary[] | null>(null);
+
+const maxSearchDate = ref<string>(getCurrentDate());
 // const searchDate = ref(getPreviousDate(7));
-const searchDate = ref(getPreviousDate(4));
+const searchDate = ref<string>(getPreviousDate(4));
+
+const clearPagination = () => {
+  currentPage.value = 1;
+  previousPage.value = 0;
+  nextPage.value = 0;
+  paginatedItems.value = null;
+};
+
+const handleSearch = () => {
+  clearPagination();
+  executeSearch();
+};
 
 const headers = {
-  // authentication header and jwt here
-  // bearerAuth
   Authorization: `Bearer ${getBearerToken(config)}`,
 };
 
 // https://nuxt.com/docs/api/composables/use-async-data
-// const {
-//   data: searchProjects,
-//   error,
-//   pending,
-//   refetch,
-// } = await useAsyncData(
-//   'projects',
-//   () =>
-//     $fetch(
-//       `${config.public.apiBase}/projects`,
-//       {
-//         query: {
-//           updatedSince: searchDate.value,
-//           apiKey: config.public.apiKey,
-//         },
-//       },
-//       {
-//         headers,
-//         immediate: false,
-//       },
-//     ),
-//   {
-//     watch: [page, searchDate],
-//   },
-// );
-
-// const dataTwice = await $fetch(
-//   `${config.public.apiBase}/projects?updatedSince=2024-01-14&api_key=${config.public.apiKey}`,
-//   {},
-// );
-
 const {
   data: searchProjects,
   error,
   pending,
-  refetch,
-} = await useFetch(
-  `/api/projects`,
-  // `${config.public.apiBase}/projects`,
+  execute: executeSearch,
+  // execute: () => clearPagination(),
+} = await useAsyncData<ProjectsResponseBody[] | null>(
+  'projects',
+  () =>
+    $fetch('/api/projects', {
+      query: {
+        updatedSince: searchDate.value,
+        apiKey: config.public.apiKey,
+      },
+      headers,
+    }),
   {
-    query: {
-      updatedSince: searchDate.value,
-      apiKey: config.public.apiKey,
-    },
+    // Watch option allows automatically rerunning the
+    // fetcher function when any changes are detected
+    // watch: [searchDate],
   },
-  { headers },
 );
 </script>

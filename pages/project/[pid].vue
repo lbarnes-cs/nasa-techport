@@ -143,7 +143,7 @@
 
             <a
               v-show="post?.project?.website"
-              class="projectInfo__button"
+              class="button"
               :href="post?.project?.website"
               target="_blank"
             >
@@ -248,17 +248,6 @@ useServerSeoMeta({
 
   &__image {
     margin: 0 0 var(--spacing);
-  }
-
-  &__button {
-    margin-top: var(--spacing);
-    padding: var(--spacing-sm);
-    color: var(--white);
-    background: var(--primary);
-    text-decoration: none;
-    border-radius: var(--border-radius);
-    display: inline-flex;
-    align-items: center;
   }
 
   &__sidebar {
