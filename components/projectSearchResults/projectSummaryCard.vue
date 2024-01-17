@@ -25,7 +25,7 @@
 <script setup lang="ts">
 import type { ProjectSummary } from '@/types/ProjectSearchResponse';
 
-const props = defineProps<ProjectSummary>();
+defineProps<ProjectSummary>();
 </script>
 
 <style lang="scss" scoped>

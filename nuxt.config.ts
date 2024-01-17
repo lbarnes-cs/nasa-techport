@@ -75,7 +75,7 @@ export default defineNuxtConfig({
 
   vue: {
     compilerOptions: {
-      isCustomElement: (tag) => ['clearApiToken'].includes(tag),
+      isCustomElement: (tag) => ['[pid]'].includes(tag),
     },
   },
 });

@@ -10,11 +10,9 @@
 
     <div v-if="error">
       <p>{{ error }}</p>
-
-      <clearApiToken />
     </div>
 
-    <div v-else-if="pending">pending</div>
+    <loadingState v-else-if="pending" />
 
     <div v-else>
       <main class="projectInfo">
@@ -24,26 +22,14 @@
             class="projectInfo__headline"
           >
             {{ post?.project?.program?.title }}
+
+            <projectStatus
+              :status-description="post.project.statusDescription"
+            />
           </p>
 
           <div class="projectInfo__title">
             <h1>{{ post?.project?.title }}</h1>
-
-            <span
-              :class="[
-                'projectStatus',
-                `projectStatus--${post.project.statusDescription.toLowerCase()}`,
-              ]"
-            >
-              <ClientOnly>
-                <IconCSS
-                  :key="post.project.statusDescription"
-                  class="icon"
-                  :name="getStatusIcon(post.project.statusDescription)"
-                />
-              </ClientOnly>
-              {{ post.project.statusDescription }}
-            </span>
           </div>
 
           <h2>Description</h2>
@@ -114,7 +100,7 @@
         <div class="projectInfo__sidebar">
           <img
             v-if="post?.project?.primaryImage"
-            :src="setImageUrl(post?.project?.primaryImage.file)"
+            :src="setImageUrl(post?.project?.primaryImage?.file)"
             :alt="post?.project?.primaryImage?.description"
           />
 
@@ -163,16 +149,16 @@
 </template>
 
 <script setup>
-import { getBearerToken } from '@/utils/apiToken';
-
 import contactInformation from '@/components/sidebar/contactInformation';
+import projectStatus from '@/components/chip/projectStatus';
+import loadingState from '@/components/pending/loadingState.vue';
 
 const config = useRuntimeConfig();
 
 const pid = useRoute().params.pid;
 
 const headers = {
-  Authorization: `Bearer ${getBearerToken(config)}`,
+  Authorization: `Bearer ${config.public.apiToken}`,
 };
 
 const {
@@ -183,32 +169,11 @@ const {
   headers,
 });
 
-// const {
-//   data: post,
-//   error,
-//   pending,
-// } = await useAsyncData('projects', () =>
-//   $fetch(`/api/projects/${pid}`, {
-//     headers,
-//   }),
-// );
-
 const { project } = await $fetch(`/api/projects/${pid}`);
 
-const getStatusIcon = (status) => {
-  switch (status) {
-    case 'Completed':
-      return 'streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form';
-    case 'Canceled':
-      return 'streamline:interface-delete-circle-button-delete-remove-add-circle-buttons';
-    default:
-      return 'streamline:interface-time-reset-time-clock-reset-stopwatch-circle-measure-loading';
-  }
-};
-
 const setImageUrl = (file) => {
-  if (file) {
-    return `https://techport.nasa.gov/image/${file.fileId}`;
+  if (file?.fileId) {
+    return `https://techport.nasa.gov/image/${file?.fileId}`;
   }
 };
 
@@ -219,7 +184,7 @@ useServerSeoMeta({
   description: () => stripHtmlTags(project?.description),
   ogTitle: () => project?.title,
   ogDescription: () => stripHtmlTags(project?.description),
-  ogImage: () => setImageUrl(project?.primaryImage.file),
+  ogImage: () => setImageUrl(project?.primaryImage?.file),
   twitterCard: () => 'summary_large_image',
 });
 </script>
@@ -241,13 +206,14 @@ useServerSeoMeta({
   &__headline {
     font-weight: 700;
     margin: 0;
+
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
   }
 
   &__title {
     margin: var(--spacing-xs) 0 var(--spacing);
-    display: flex;
-    align-items: baseline;
-    justify-content: space-between;
   }
 
   &__image {
@@ -264,6 +230,8 @@ useServerSeoMeta({
 
     img {
       width: 100%;
+      max-height: 300px;
+      object-fit: cover;
       border-radius: var(--border-radius) var(--border-radius) 0 0;
     }
 
@@ -298,28 +266,6 @@ useServerSeoMeta({
 
   .icon {
     margin-right: var(--spacing-sm);
-  }
-}
-
-.projectStatus {
-  border-radius: var(--border-radius);
-  color: var(--white);
-  padding: var(--spacing-xs) var(--spacing-sm);
-  display: inline-flex;
-  align-items: center;
-  font-weight: 400;
-  margin-left: var(--spacing-md);
-
-  &--active {
-    background: var(--status-active);
-  }
-
-  &--completed {
-    background: var(--status-completed);
-  }
-
-  &--canceled {
-    background: var(--status-canceled);
   }
 }
 
