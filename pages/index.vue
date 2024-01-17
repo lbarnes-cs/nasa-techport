@@ -8,42 +8,49 @@
       <div class="header">
         <h1>NASA Project search</h1>
 
-        <div v-if="pending">pending</div>
-
-        <div v-else class="searchInput">
-          <span class="searchInput__placeholder">Search by date:</span>
-
-          <div class="searchInput__input">
-            <ClientOnly>
-              <VueDatePicker
-                v-model="searchDate"
-                :enable-time-picker="false"
-                :max-date="maxSearchDate"
-                :clearable="false"
-                format="yyyy-MM-dd"
-              />
-            </ClientOnly>
-          </div>
-
-          <button class="button button--wide" @click="handleSearch">
-            <ClientOnly>
-              <IconCSS
-                class="icon"
-                name="streamline:interface-edit-zoom-in-enhance-glass-in-magnify-magnifying-zoom"
-              />
-            </ClientOnly>
-
-            Search
-          </button>
+        <div v-if="pending" class="header__pending">
+          <ClientOnly>
+            <IconCSS class="icon" name="eos-icons:bubble-loading" />
+          </ClientOnly>
+          Scanning for life signs
         </div>
 
-        <div v-if="searchProjects?.totalCount" class="header__count">
-          Total number of projects: {{ searchProjects.totalCount }}
+        <div v-else>
+          <div class="searchInput">
+            <span class="searchInput__placeholder">Search by date:</span>
+
+            <div class="searchInput__input">
+              <ClientOnly>
+                <VueDatePicker
+                  v-model="searchDate"
+                  :enable-time-picker="false"
+                  :max-date="maxSearchDate"
+                  :clearable="false"
+                  format="yyyy-MM-dd"
+                />
+              </ClientOnly>
+            </div>
+
+            <button class="button button--wide" @click="handleSearch">
+              <ClientOnly>
+                <IconCSS
+                  class="icon"
+                  name="streamline:interface-edit-zoom-in-enhance-glass-in-magnify-magnifying-zoom"
+                />
+              </ClientOnly>
+
+              Search
+            </button>
+          </div>
+
+          <div v-if="searchProjects?.totalCount" class="header__count">
+            Total number of projects: {{ searchProjects.totalCount }}
+          </div>
         </div>
       </div>
 
       <searchResults
-        v-if="searchProjects"
+        v-if="searchProjects && !pending"
         :projects="searchProjects?.projects"
       />
     </div>
@@ -127,6 +134,20 @@ const {
   background: var(--white);
   padding: var(--spacing) var(--spacing-md);
   margin: 0 calc(var(--spacing-md) * -1);
+
+  &__pending {
+    margin: var(--spacing-xl) 0;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    ::v-deep(.icon) {
+      margin-bottom: var(--spacing-sm);
+      font-size: 1.6em;
+    }
+  }
 }
 
 .searchInput {
@@ -141,7 +162,7 @@ const {
 
   &__placeholder {
     border-right: 1px solid var(--border-color);
-    padding: 4px 16px;
+    padding: var(--spacing-xs) var(--spacing);
     // flex: 1 0 auto;
     align-self: center;
     font-weight: 500;
