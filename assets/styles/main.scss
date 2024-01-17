@@ -2,10 +2,22 @@
 @import './_spacing.scss';
 @import './_helper';
 
+// components
+@import './components/';
+
 html {
   color: var(--text);
   font-family: 'Roboto', sans-serif;
   font-size: 0.8em;
+}
+
+*,
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
 }
 
 a {

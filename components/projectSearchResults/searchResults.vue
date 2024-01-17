@@ -1,16 +1,10 @@
 <template>
   <div class="searchResults">
-    <div class="searchResults__title">
-      Total number of items: {{ totalCount }}
-    </div>
-
-    <div class="searchResults__results">
-      <projectSummaryCard
-        v-for="project in projects"
-        :key="project.projectId"
-        v-bind="project"
-      />
-    </div>
+    <projectSummaryCard
+      v-for="project in projects"
+      :key="project.projectId"
+      v-bind="project"
+    />
   </div>
 </template>
 
@@ -21,20 +15,13 @@ import type { ProjectSummary } from '@/types/ProjectSearchResponse';
 
 defineProps<{
   projects?: Array<ProjectSummary>;
-  totalCount?: Number;
 }>();
 </script>
 
 <style lang="scss" scoped>
 .searchResults {
-  &__title {
-    margin: 0 0 var(--spacing);
-  }
-
-  &__results {
-    display: grid;
-    gap: var(--spacing);
-    grid-template-columns: repeat(3, 1fr);
-  }
+  display: grid;
+  gap: var(--spacing);
+  grid-template-columns: repeat(3, 1fr);
 }
 </style>

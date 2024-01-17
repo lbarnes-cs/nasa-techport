@@ -4,6 +4,10 @@ export default defineNuxtConfig({
 
   modules: ['@vee-validate/nuxt', '@nuxtjs/google-fonts', 'nuxt-icon'],
 
+  build: {
+    transpile: ['@vuepic/vue-datepicker'],
+  },
+
   css: ['~/assets/styles/main.scss'],
 
   // Set meta-titles

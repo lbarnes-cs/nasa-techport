@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="page">
     <!-- <Head>
       <Title>{{ post?.project?.title }}</Title>
       <Meta
@@ -225,6 +225,10 @@ useServerSeoMeta({
 </script>
 
 <style lang="scss" scoped>
+.page {
+  padding: var(--spacing) 0;
+}
+
 .projectInfo {
   display: flex;
   align-items: flex-start;
@@ -253,7 +257,7 @@ useServerSeoMeta({
   &__sidebar {
     width: 280px;
     position: sticky;
-    top: var(--spacing-sm);
+    top: var(--spacing);
     background: var(--sidebar);
     box-shadow: var(--box-shadow);
     border-radius: var(--border-radius);
@@ -261,6 +265,10 @@ useServerSeoMeta({
     img {
       width: 100%;
       border-radius: var(--border-radius) var(--border-radius) 0 0;
+    }
+
+    ::v-deep(.button) {
+      margin-top: var(--spacing);
     }
 
     aside {

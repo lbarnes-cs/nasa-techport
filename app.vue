@@ -11,9 +11,9 @@
 <script setup>
 import { checkIfApiTokenExists } from '@/utils/apiToken';
 import setApiToken from '@/components/missingToken/setApiToken';
-// import { ofetch } from 'ofetch'
 
-// globalThis.$fetch = ofetch.create({ baseUrl: '', onRequest: () => {}, ... })
+import '@unocss/reset/normalize.css';
+
 const config = useRuntimeConfig();
 
 const checkForMissingToken = () => {

@@ -1,0 +1,31 @@
+button.button,
+.button {
+  padding: var(--spacing-sm);
+  color: var(--white);
+  background-color: var(--primary);
+  text-decoration: none;
+  border-radius: var(--border-radius);
+  display: inline-flex;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 200ms ease-in-out;
+
+  border: 0;
+  outline: 0;
+
+  .icon {
+    margin-right: var(--spacing-sm);
+  }
+
+  &:hover {
+    background-color: var(--primary800);
+  }
+
+  &:active {
+    background-color: var(--primary);
+  }
+
+  &--wide {
+    padding: var(--spacing-sm) var(--spacing);
+  }
+}
