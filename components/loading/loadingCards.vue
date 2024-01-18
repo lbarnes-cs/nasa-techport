@@ -20,7 +20,7 @@
     border-radius: var(--border-radius);
     border: 1px #ccc solid;
     text-decoration: none;
-    background: var(--shade100);
+    background: var(--shade300);
     height: 70px;
   }
 }
