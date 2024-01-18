@@ -24,9 +24,11 @@ Failed attempts:
 
 ## Further enhancement
 
-### Limitation of project API Call
+### Repetition of project API Call
 
 The current API call to search projects (`/api/projects`) based upon `updatedSince` doesn't display all the relevant data outlined in the coding challenge brief. Idealistic, we want to include "name, start and end of the project". With the current API call, the `title` is currently blank, and we are not returned the `startDate` and `endDate` within the search response. This information is present when requesting the `project` based upon the `projectId`.
+
+It is assumed that the challenge requires you to get this information information, and that the lack of data in the main Project Summary, including the `title` is a known issue.
 
 ```json
 {
@@ -38,29 +40,13 @@ The current API call to search projects (`/api/projects`) based upon `updatedSin
       "website": "",
       "lastUpdated": "2024-1-16"
     },
-    {
-      "acronym": "",
-      "projectId": 105782,
-      "title": "",
-      "website": "",
-      "lastUpdated": "2024-1-16"
-    }
   ]
 ]
 ```
 
-One solution would be to ping every individual project, and inject the relevant data into the `projects[]` array. But this could result in an large number of API calls, and could well exceed our API request hourly limit [Web Service Rate Limits](https://api.nasa.gov/)
+The current solution is to fetch every single product to obtain this missing information. However this results in a large number of API calls for each pagination.
 
-```js
-useFetch(`https://techport.nasa.gov/api/projects?updatedSince=${selectedDate}`).then(response => {
-
-     useFetch(`https://techport.nasa.gov/api/projects/${projectId}`).then(project=> {
-        // map the responces
-        paragraphs.value = it2
-     }
-  }
-
-```
+For production worthy code, we would want to not only cache this API request, but inject the saved the return information to the main Projects array. At the moment, we are `slicing` the array, and then injecting the secondary fetch into the new array.
 
 ### Improve pagination
 
@@ -87,7 +73,7 @@ Add a cleaner loading state, replacing the fixed "loading cards" when searching 
 **Display `<IconCSS>` on server side**
 At the moment, the component `<IconCSS>` is only loaded on the `client` due to hydration mismatch issues. To help keep the UI from jumping, it would a smoother user experience to keep the icons visible at all times.
 
-## Setup
+## View the project
 
 Make sure to install the dependencies:
 

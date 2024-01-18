@@ -1,8 +1,12 @@
 <template>
   <div class="loading">
-    <div v-for="index in 6" :key="index" class="card">loading</div>
+    <cardSkeleton v-for="index in 6" :key="index" />
   </div>
 </template>
+
+<script setup lang="ts">
+import cardSkeleton from './cardSkeleton.vue';
+</script>
 
 <style lang="scss" scoped>
 .loading {
@@ -13,15 +17,6 @@
   ::v-deep(.icon) {
     margin-bottom: var(--spacing-sm);
     font-size: 1.6em;
-  }
-
-  .card {
-    padding: var(--spacing-sm);
-    border-radius: var(--border-radius);
-    border: 1px #ccc solid;
-    text-decoration: none;
-    background: var(--shade300);
-    height: 70px;
   }
 }
 </style>

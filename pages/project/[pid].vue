@@ -172,7 +172,7 @@ const {
 
 // Still working out the fun part of the fetch life cycle. This method allows us to get the
 // data needed for our `useServerSeoMeta`. `UseFetch` is not accessible
-const { metaData } = await $fetch(`/api/projects/${pid}`, {
+const { project: metaData } = await $fetch(`/api/projects/${pid}`, {
   server: true,
 });
 
@@ -215,6 +215,10 @@ useServerSeoMeta({
     display: flex;
     align-items: baseline;
     justify-content: space-between;
+
+    ::v-deep(.projectStatus) {
+      margin-left: var(--spacing-md);
+    }
   }
 
   &__title {

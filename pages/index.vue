@@ -98,6 +98,7 @@ import type {
   ProjectSummary,
   ProjectsResponseBodyType,
 } from '@/types/ProjectSearchResponse';
+import type { ProjectItemType } from '@/types/ProjectItemResponse';
 import type { PaginateType } from '@/types/Pagination';
 
 import {
@@ -114,21 +115,43 @@ import loadingState from '@/components/loading/loadingState.vue';
 const config = useRuntimeConfig();
 
 const currentPage = ref<number>(1);
-const paginatedItems = ref<ProjectSummary[] | null>(null);
 // const resultsPerPage = ref<number>(Number(getData('resultsPerPage')) || 25);
 const resultsPerPage = ref<number>(25);
 
 const maxSearchDate = ref<Date>(getCurrentDate());
 const searchDate = ref(getPreviousDate(7));
 
-const paginatedPrograms = computed(
-  (): PaginateType =>
-    paginate({
-      perPage: resultsPerPage.value,
-      currentPage: currentPage.value,
-      list: searchProjects?.value?.projects,
+const paginatedPrograms = computed((): PaginateType => {
+  const { totalPages, nextPage, previousPage, items } = paginate({
+    perPage: resultsPerPage.value,
+    currentPage: currentPage.value,
+    list: searchProjects?.value?.projects,
+  });
+
+  fetchItemDetails(items);
+
+  return {
+    previousPage,
+    nextPage,
+    totalPages,
+    items,
+  };
+});
+
+const fetchItemDetails = (items: ProjectSummary[]) => {
+  Promise.all(
+    items.map(async (currentProjectItem: ProjectSummary) => {
+      const { project }: { project: ProjectItemType } = await $fetch(
+        `/api/projects/${currentProjectItem.projectId}`,
+      );
+
+      currentProjectItem.title = project.title;
+      currentProjectItem.endDateString = project.endDateString;
+      currentProjectItem.startDateString = project.startDateString;
+      currentProjectItem.statusDescription = project.statusDescription;
     }),
-);
+  );
+};
 
 const handleChangePage = (pageNumber: number) => {
   currentPage.value = pageNumber;
@@ -136,11 +159,11 @@ const handleChangePage = (pageNumber: number) => {
 
 const handleResultsPerPage = (perPage: number) => {
   resultsPerPage.value = perPage;
+  clearPagination();
 };
 
 const clearPagination = () => {
   currentPage.value = 1;
-  paginatedItems.value = null;
 };
 
 const handleSearch = () => {

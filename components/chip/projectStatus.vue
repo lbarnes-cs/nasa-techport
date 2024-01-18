@@ -47,7 +47,6 @@ const getStatusIcon = (status: StatusDescriptionEnum) => {
   display: inline-flex;
   align-items: center;
   font-weight: 400;
-  margin-left: var(--spacing-md);
   line-height: 1.2;
 
   &--active {

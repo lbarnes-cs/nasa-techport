@@ -63,12 +63,18 @@ const resultsPerPageOptions: number[] = ref([10, 25, 50]);
 
 const emit = defineEmits(['changePage', 'changeResultsPerPage']);
 
+const scrollToTop = () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+
 const handlePageChange = (page: number) => {
   emit('changePage', page);
+  scrollToTop();
 };
 
 const handlePerPage = (perPage: string) => {
   emit('changeResultsPerPage', Number(perPage));
+  scrollToTop();
   // setData('resultsPerPage', Number(perPage), 7, 'd');
 };
 </script>
