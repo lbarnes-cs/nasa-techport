@@ -89,7 +89,7 @@
 </template>
 
 <script setup lang="ts">
-import { getData } from 'nuxt-storage/local-storage';
+// import { getData } from 'nuxt-storage/local-storage';
 
 import VueDatePicker from '@vuepic/vue-datepicker';
 import '@vuepic/vue-datepicker/dist/main.css';
@@ -115,7 +115,8 @@ const config = useRuntimeConfig();
 
 const currentPage = ref<number>(1);
 const paginatedItems = ref<ProjectSummary[] | null>(null);
-const resultsPerPage = ref<number>(Number(getData('resultsPerPage')) || 25);
+// const resultsPerPage = ref<number>(Number(getData('resultsPerPage')) || 25);
+const resultsPerPage = ref<number>(25);
 
 const maxSearchDate = ref<Date>(getCurrentDate());
 const searchDate = ref(getPreviousDate(7));

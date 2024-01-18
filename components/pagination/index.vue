@@ -52,7 +52,7 @@
 </template>
 
 <script setup lang="ts">
-import { setData } from 'nuxt-storage/local-storage';
+// import { setData } from 'nuxt-storage/local-storage';
 import type { PaginationComponentType } from '@/types/Pagination';
 
 const props = defineProps<PaginationComponentType>();
@@ -69,7 +69,7 @@ const handlePageChange = (page: number) => {
 
 const handlePerPage = (perPage: string) => {
   emit('changeResultsPerPage', Number(perPage));
-  setData('resultsPerPage', Number(perPage), 7, 'd');
+  // setData('resultsPerPage', Number(perPage), 7, 'd');
 };
 </script>
 

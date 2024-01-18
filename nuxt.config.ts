@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ['nuxt-storage/local-storage', '@nuxtjs/google-fonts', 'nuxt-icon'],
+  modules: ['@nuxtjs/google-fonts', 'nuxt-icon'],
 
   build: {
     transpile: ['@vuepic/vue-datepicker'],
