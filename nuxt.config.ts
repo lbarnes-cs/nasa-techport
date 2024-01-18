@@ -2,7 +2,7 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
 
-  modules: ['@vee-validate/nuxt', '@nuxtjs/google-fonts', 'nuxt-icon'],
+  modules: ['nuxt-storage/local-storage', '@nuxtjs/google-fonts', 'nuxt-icon'],
 
   build: {
     transpile: ['@vuepic/vue-datepicker'],
@@ -47,21 +47,9 @@ export default defineNuxtConfig({
     },
   },
 
-  veeValidate: {
-    // disable or enable auto imports
-    autoImports: true,
-    // Use different names for components
-    componentNames: {
-      Form: 'VeeForm',
-      Field: 'VeeField',
-      FieldArray: 'VeeFieldArray',
-      ErrorMessage: 'VeeErrorMessage',
-    },
-  },
-
   googleFonts: {
     families: {
-      Roboto: [300, 400, 500, 700],
+      Roboto: [400, 500, 700],
       Inter: [400, 700],
     },
   },
