@@ -151,7 +151,7 @@
 <script setup>
 import contactInformation from '@/components/sidebar/contactInformation';
 import projectStatus from '@/components/chip/projectStatus';
-import loadingState from '@/components/pending/loadingState.vue';
+import loadingState from '@/components/loading/loadingState.vue';
 
 const config = useRuntimeConfig();
 

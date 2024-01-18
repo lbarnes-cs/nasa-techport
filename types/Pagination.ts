@@ -9,4 +9,5 @@ export type PaginateType = {
 
 export type PaginationComponentType = Omit<PaginateType, 'items'> & {
   currentPage: number;
+  resultsPerPage: number;
 };

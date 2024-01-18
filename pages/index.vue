@@ -23,6 +23,10 @@
                   :clearable="false"
                   format="yyyy-MM-dd"
                 />
+
+                <template #fallback>
+                  <span class="searchInput__loading">Loading...</span>
+                </template>
               </ClientOnly>
             </div>
 
@@ -38,40 +42,55 @@
             </button>
           </div>
 
-          <div v-if="searchProjects?.totalCount" class="header__count">
-            <span>
-              Total number of projects: {{ searchProjects.totalCount }}
-            </span>
+          <ClientOnly>
+            <div v-if="searchProjects?.totalCount" class="header__count">
+              <span>
+                Total number of projects: {{ searchProjects.totalCount }}
+              </span>
 
-            <span>
-              Showing <strong>{{ currentPage }}</strong> to
-              <strong>{{ paginatedPrograms.totalPages }}</strong> of
-              <strong>{{ searchProjects.totalCount }}</strong> results
-            </span>
-          </div>
+              <span>
+                Showing <strong>{{ currentPage }}</strong> to
+                <strong>{{ paginatedPrograms.totalPages }}</strong> of
+                <strong>{{ searchProjects.totalCount }}</strong> results
+              </span>
+            </div>
+          </ClientOnly>
         </div>
       </div>
 
-      <div v-if="!pending">
-        <searchResults
-          v-if="paginatedPrograms.items"
-          :projects="paginatedPrograms.items"
-        />
+      <div>
+        <loadingCards v-if="pending" />
 
-        <pagination
-          class="paginationContainer"
-          :previous-page="paginatedPrograms.previousPage"
-          :next-page="paginatedPrograms.nextPage"
-          :total-pages="paginatedPrograms.totalPages"
-          :current-page="currentPage"
-          @change-page="handleChangePage"
-        />
+        <ClientOnly>
+          <template #fallback>
+            <loadingCards />
+          </template>
+
+          <searchResults
+            v-if="!pending && paginatedPrograms.items"
+            :projects="paginatedPrograms.items"
+          />
+
+          <pagination
+            v-if="!pending"
+            class="paginationContainer"
+            :previous-page="paginatedPrograms.previousPage"
+            :next-page="paginatedPrograms.nextPage"
+            :total-pages="paginatedPrograms.totalPages"
+            :current-page="currentPage"
+            :results-per-page="resultsPerPage"
+            @change-page="handleChangePage"
+            @change-results-per-page="handleResultsPerPage"
+          />
+        </ClientOnly>
       </div>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
+import { getData } from 'nuxt-storage/local-storage';
+
 import VueDatePicker from '@vuepic/vue-datepicker';
 import '@vuepic/vue-datepicker/dist/main.css';
 
@@ -89,14 +108,14 @@ import {
 
 import searchResults from '@/components/projectSearchResults/searchResults.vue';
 import pagination from '@/components/pagination/index.vue';
-import loadingState from '@/components/pending/loadingState.vue';
+import loadingCards from '@/components/loading/loadingCards.vue';
+import loadingState from '@/components/loading/loadingState.vue';
 
 const config = useRuntimeConfig();
 
 const currentPage = ref<number>(1);
-const previousPage = ref<number>(0);
-const nextPage = ref<number>(0);
 const paginatedItems = ref<ProjectSummary[] | null>(null);
+const resultsPerPage = ref<number>(Number(getData('resultsPerPage')) || 25);
 
 const maxSearchDate = ref<Date>(getCurrentDate());
 const searchDate = ref(getPreviousDate(7));
@@ -104,7 +123,7 @@ const searchDate = ref(getPreviousDate(7));
 const paginatedPrograms = computed(
   (): PaginateType =>
     paginate({
-      perPage: 10,
+      perPage: resultsPerPage.value,
       currentPage: currentPage.value,
       list: searchProjects?.value?.projects,
     }),
@@ -114,10 +133,12 @@ const handleChangePage = (pageNumber: number) => {
   currentPage.value = pageNumber;
 };
 
+const handleResultsPerPage = (perPage: number) => {
+  resultsPerPage.value = perPage;
+};
+
 const clearPagination = () => {
   currentPage.value = 1;
-  previousPage.value = 0;
-  nextPage.value = 0;
   paginatedItems.value = null;
 };
 
@@ -174,10 +195,9 @@ const {
 }
 
 .paginationContainer {
-  display: flex;
-  justify-content: center;
   margin: var(--spacing-xl) 0;
 }
+
 .searchInput {
   display: flex;
   justify-content: center;
@@ -197,6 +217,13 @@ const {
 
   &__input {
     flex: 1 0 auto;
+
+    display: flex;
+    align-items: center;
+  }
+
+  &__loading {
+    padding-left: var(--spacing);
   }
 
   ::v-deep(.dp__main) {
