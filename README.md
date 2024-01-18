@@ -65,7 +65,7 @@ For a cleaner user-experience, it would be good to remember both the `results pe
 
 For `results per page`, when the user reloads the page, it would be a cleaner user-experience if the previously selected result is remembered, and the user doesn't need to change the drop down every time.
 
-As for hte `selected pagination`, if we include this as a URL parameter when the pagination is changed. User flow: the user selects a project on the second page, and upon reading the project and pressing the back button, they will return back to the second page. This could be achieved by using the URL parameter and the browser's history.
+As for the `selected pagination`, if we include this as a URL parameter when the pagination is changed. User flow: the user selects a project on the second page, and upon reading the project and pressing the back button, they will return back to the second page. This could be achieved by using the URL parameter and the browser's history.
 
 **Improve loading state**
 Add a cleaner loading state, replacing the fixed "loading cards" when searching for projects, and replace with a skeleton. This will give a smoother, animated loading state
