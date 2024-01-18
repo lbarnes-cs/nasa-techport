@@ -48,6 +48,7 @@ const getStatusIcon = (status: StatusDescriptionEnum) => {
   align-items: center;
   font-weight: 400;
   margin-left: var(--spacing-md);
+  line-height: 1.2;
 
   &--active {
     background: var(--status-active);
@@ -62,7 +63,7 @@ const getStatusIcon = (status: StatusDescriptionEnum) => {
   }
 
   ::v-deep(.icon) {
-    margin-right: var(--spacing-md);
+    margin-right: var(--spacing-sm);
   }
 }
 </style>

@@ -41,7 +41,7 @@ export default defineNuxtConfig({
   // Pass env variables
   runtimeConfig: {
     public: {
-      apiBase: '',
+      apiBase: 'https://techport.nasa.gov/api/',
       apiKey: '',
       apiToken: '',
     },
@@ -54,12 +54,37 @@ export default defineNuxtConfig({
     },
   },
 
-  // Fix CORS issue on the client side
-  routeRules: {
-    '/api/**': {
-      proxy: { to: 'https://techport.nasa.gov/api/**' },
-    },
-  },
+  // FAILED
+  // Fix CORS issue on the client side: https://github.com/nuxt/nuxt/issues/19325
+  // routeRules: {
+  //   '/api/**': {
+  //     proxy: { to: 'https://techport.nasa.gov/api/**' },
+  //   },
+  // },
+
+  // FAILED
+  // proxy: {
+  //   options: {
+  //     target: 'https://techport.nasa.gov/',
+  //     changeOrigin: true,
+  //     pathRewrite: {
+  //       '^/api/projects': '/api/projects',
+  //     },
+  //     pathFilter: ['/api/projects'],
+  //   },
+  // },
+
+  // apiParty: {
+  //   endpoints: {
+  //     jsonPlaceholder: {
+  //       url: process.env.NUXT_PUBLIC_API_BASE!,
+  //       // Global headers sent with each request
+  //       headers: {
+  //         Authorization: `Bearer ${process.env.NUXT_PUBLIC_API_TOKEN}`,
+  //       },
+  //     },
+  //   },
+  // },
 
   vue: {
     compilerOptions: {

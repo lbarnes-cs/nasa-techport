@@ -1,12 +1,19 @@
 <template>
   <div class="page">
-    <!-- <Head>
+    <!-- 
+      We could also control the meta tags via the useFetch,
+      and have only one API call.
+      Leaving this code as an example to possibly discuss 
+      the two options
+
+      <Head>
       <Title>{{ post?.project?.title }}</Title>
       <Meta
         name="description"
         :content="stripHtmlTags(post?.project?.description)"
       />
-    </Head> -->
+    </Head> 
+  -->
 
     <div v-if="error">
       <p>{{ error }}</p>
@@ -32,10 +39,10 @@
             <h1>{{ post?.project?.title }}</h1>
           </div>
 
-          <h2>Description</h2>
+          <h2 class="projectInfo__subtitle">Description</h2>
           <div v-html="post?.project?.description" />
 
-          <h2>Benefits</h2>
+          <h2 class="projectInfo__subtitle">Benefits</h2>
           <div v-html="post?.project?.benefits" />
 
           <h2>Project Information</h2>
@@ -153,23 +160,21 @@ import contactInformation from '@/components/sidebar/contactInformation';
 import projectStatus from '@/components/chip/projectStatus';
 import loadingState from '@/components/loading/loadingState.vue';
 
-const config = useRuntimeConfig();
-
 const pid = useRoute().params.pid;
-
-const headers = {
-  Authorization: `Bearer ${config.public.apiToken}`,
-};
 
 const {
   data: post,
   error,
   pending,
 } = await useFetch(`/api/projects/${pid}`, {
-  headers,
+  server: true,
 });
 
-const { project } = await $fetch(`/api/projects/${pid}`);
+// Still working out the fun part of the fetch life cycle. This method allows us to get the
+// data needed for our `useServerSeoMeta`. `UseFetch` is not accessible
+const { metaData } = await $fetch(`/api/projects/${pid}`, {
+  server: true,
+});
 
 const setImageUrl = (file) => {
   if (file?.fileId) {
@@ -180,11 +185,11 @@ const setImageUrl = (file) => {
 const stripHtmlTags = (content) => content?.replace(/(<([^>]+)>)/gi, '');
 
 useServerSeoMeta({
-  title: () => project?.title,
-  description: () => stripHtmlTags(project?.description),
-  ogTitle: () => project?.title,
-  ogDescription: () => stripHtmlTags(project?.description),
-  ogImage: () => setImageUrl(project?.primaryImage?.file),
+  title: () => metaData?.title,
+  description: () => stripHtmlTags(metaData?.description),
+  ogTitle: () => metaData?.title,
+  ogDescription: () => stripHtmlTags(metaData?.description),
+  ogImage: () => setImageUrl(metaData?.primaryImage?.file),
   twitterCard: () => 'summary_large_image',
 });
 </script>
@@ -214,6 +219,10 @@ useServerSeoMeta({
 
   &__title {
     margin: var(--spacing-xs) 0 var(--spacing);
+  }
+
+  &__subtitle {
+    margin: var(--spacing) 0 var(--spacing-sm);
   }
 
   &__image {

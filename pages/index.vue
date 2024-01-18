@@ -148,10 +148,6 @@ const handleSearch = () => {
   executeSearch();
 };
 
-const headers = {
-  Authorization: `Bearer ${config.public.apiToken}`,
-};
-
 // https://nuxt.com/docs/api/composables/use-async-data
 const {
   data: searchProjects,
@@ -167,7 +163,7 @@ const {
         updatedSince: formatDateToString(searchDate.value),
         apiKey: config.public.apiKey,
       },
-      headers,
+      server: true,
     }),
   {
     // Watch option allows automatically rerunning the
