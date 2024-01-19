@@ -109,3 +109,12 @@ Locally preview production build:
 # pnpm
 pnpm preview
 ```
+
+## Running Tests with vitest
+
+Note: There are some Vue warning on improving app logic and unresolved components that need to be improved upon. Some good learnings to be found in the future!
+
+```bash
+pnpm test
+pnpm test:coverage
+```
