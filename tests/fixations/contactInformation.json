@@ -1,0 +1,59 @@
+{
+  "principalInvestigators": [
+    {
+      "contactId": 402743,
+      "canUserEdit": false,
+      "displayOrder": 1,
+      "firstName": "Robert",
+      "lastName": "Moss",
+      "fullName": "Robert W Moss",
+      "fullNameInverted": "Moss, Robert W",
+      "middleInitial": "W",
+      "primaryEmail": "robert.w.moss@nasa.gov",
+      "publicEmail": true,
+      "nacontact": false
+    }
+  ],
+  "programManagers": [
+    {
+      "contactId": 373483,
+      "canUserEdit": false,
+      "firstName": "Peter",
+      "lastName": "Hughes",
+      "fullName": "Peter M Hughes",
+      "fullNameInverted": "Hughes, Peter M",
+      "middleInitial": "M",
+      "primaryEmail": "peter.m.hughes@nasa.gov",
+      "publicEmail": true,
+      "nacontact": false
+    }
+  ],
+  "projectManagers": [
+    {
+      "contactId": 23,
+      "canUserEdit": false,
+      "displayOrder": 1,
+      "firstName": "Jason",
+      "lastName": "Mitchell",
+      "fullName": "Jason W Mitchell",
+      "fullNameInverted": "Mitchell, Jason W",
+      "middleInitial": "W",
+      "primaryEmail": "jason.w.mitchell@nasa.gov",
+      "publicEmail": true,
+      "nacontact": false
+    },
+    {
+      "contactId": 506527,
+      "canUserEdit": false,
+      "displayOrder": 2,
+      "firstName": "Michael",
+      "lastName": "Johnson",
+      "fullName": "Michael A Johnson",
+      "fullNameInverted": "Johnson, Michael A",
+      "middleInitial": "A",
+      "primaryEmail": "michael.a.johnson@nasa.gov",
+      "publicEmail": true,
+      "nacontact": false
+    }
+  ]
+}

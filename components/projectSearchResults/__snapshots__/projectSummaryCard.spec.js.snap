@@ -1,0 +1,5475 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`Project Summary Card > With data > Should match the snapshot 1`] = `
+VueWrapper {
+  "__app": {
+    "_component": {
+      "name": "VTU_ROOT",
+      "render": [Function],
+      "setup": [Function],
+    },
+    "_container": <div
+      data-v-app=""
+    >
+      <nuxt-link
+        class="projectSummaryCard"
+        data-test="projectCard"
+        data-v-7b12e235=""
+        to="[object Object]"
+      >
+        <div
+          class="projectSummaryCard__header"
+          data-v-7b12e235=""
+        >
+          <p
+            class="projectSummaryCard__title"
+            data-test="projectCard-title"
+            data-v-7b12e235=""
+          >
+            Title
+          </p>
+        </div>
+        <div
+          class="projectSummaryCard__content"
+          data-v-7b12e235=""
+        >
+          <div
+            class="projectSummaryCard__summary"
+            data-v-7b12e235=""
+          >
+             Project Number: 
+            <span
+              data-v-7b12e235=""
+            >
+              123
+            </span>
+          </div>
+          <div
+            class="projectSummaryCard__summary"
+            data-v-7b12e235=""
+          >
+             Project Start Date: 
+            <span
+              data-v-7b12e235=""
+            >
+              2024-01-01
+            </span>
+          </div>
+          <div
+            class="projectSummaryCard__summary"
+            data-v-7b12e235=""
+          >
+             Project End Date: 
+            <span
+              data-v-7b12e235=""
+            >
+              2024-01-01
+            </span>
+          </div>
+          <div
+            class="projectSummaryCard__summary"
+            data-v-7b12e235=""
+          >
+             Last updated: 
+            <span
+              data-v-7b12e235=""
+            >
+              23-01-01
+            </span>
+          </div>
+          <div
+            class="projectSummaryCard__projectStatus"
+            data-test="projectCard-status"
+            data-v-7b12e235=""
+          >
+            <span
+              class="projectStatus projectStatus--completed"
+              data-v-7b12e235=""
+              data-v-c8efa418=""
+            >
+              <clientonly
+                data-v-c8efa418=""
+              >
+                <iconcss
+                  class="icon"
+                  data-v-c8efa418=""
+                  name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                />
+              </clientonly>
+               Completed
+            </span>
+          </div>
+        </div>
+      </nuxt-link>
+    </div>,
+    "_context": {
+      "app": [Circular],
+      "components": {
+        "transition": {
+          "name": "transition",
+        },
+        "transition-group": {
+          "name": "transition-group",
+        },
+      },
+      "config": {
+        "compilerOptions": {},
+        "errorHandler": undefined,
+        "globalProperties": {},
+        "isNativeTag": [Function],
+        "optionMergeStrategies": {},
+        "performance": false,
+        "warnHandler": undefined,
+      },
+      "directives": {},
+      "emitsCache": WeakMap {},
+      "mixins": [
+        {
+          "beforeCreate": [Function],
+        },
+      ],
+      "optionsCache": WeakMap {},
+      "propsCache": WeakMap {},
+      "provides": {},
+      "reload": [Function],
+    },
+    "_instance": {
+      "a": null,
+      "accessCache": {},
+      "appContext": {
+        "app": [Circular],
+        "components": {
+          "transition": {
+            "name": "transition",
+          },
+          "transition-group": {
+            "name": "transition-group",
+          },
+        },
+        "config": {
+          "compilerOptions": {},
+          "errorHandler": undefined,
+          "globalProperties": {},
+          "isNativeTag": [Function],
+          "optionMergeStrategies": {},
+          "performance": false,
+          "warnHandler": undefined,
+        },
+        "directives": {},
+        "emitsCache": WeakMap {},
+        "mixins": [
+          {
+            "beforeCreate": [Function],
+          },
+        ],
+        "optionsCache": WeakMap {},
+        "propsCache": WeakMap {},
+        "provides": {},
+        "reload": [Function],
+      },
+      "asyncDep": null,
+      "asyncResolved": false,
+      "attrs": {},
+      "attrsProxy": null,
+      "bc": null,
+      "bm": null,
+      "bu": null,
+      "bum": null,
+      "c": null,
+      "components": null,
+      "ctx": {
+        "VTU_COMPONENT": {},
+      },
+      "da": null,
+      "data": {},
+      "devtoolsRawSetupState": {
+        "VTU_COMPONENT": RefImpl {
+          "__v_isRef": true,
+          "__v_isShallow": false,
+          "_rawValue": {},
+          "_value": {},
+          "dep": undefined,
+        },
+      },
+      "directives": null,
+      "ec": null,
+      "effect": ReactiveEffect {
+        "_depsLength": 9,
+        "_dirtyLevel": 0,
+        "_runnings": 0,
+        "_shouldSchedule": false,
+        "_trackId": 1,
+        "active": true,
+        "allowRecurse": true,
+        "deps": [
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+        ],
+        "fn": [Function],
+        "onTrack": undefined,
+        "onTrigger": undefined,
+        "scheduler": [Function],
+        "trigger": [Function],
+      },
+      "emit": [Function],
+      "emitsOptions": null,
+      "emitted": null,
+      "exposeProxy": null,
+      "exposed": null,
+      "inheritAttrs": undefined,
+      "isDeactivated": false,
+      "isMounted": true,
+      "isUnmounted": false,
+      "m": null,
+      "next": null,
+      "parent": null,
+      "props": {},
+      "propsDefaults": {},
+      "propsOptions": [
+        {},
+        [],
+      ],
+      "provides": {},
+      "proxy": {
+        "VTU_COMPONENT": {},
+      },
+      "refs": {
+        "VTU_COMPONENT": {},
+      },
+      "render": [Function],
+      "renderCache": [],
+      "root": [Circular],
+      "rtc": null,
+      "rtg": null,
+      "scope": EffectScope {
+        "_active": true,
+        "cleanups": [],
+        "detached": true,
+        "effects": [
+          ReactiveEffect {
+            "_depsLength": 9,
+            "_dirtyLevel": 0,
+            "_runnings": 0,
+            "_shouldSchedule": false,
+            "_trackId": 1,
+            "active": true,
+            "allowRecurse": true,
+            "deps": [
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+            ],
+            "fn": [Function],
+            "onTrack": undefined,
+            "onTrigger": undefined,
+            "scheduler": [Function],
+            "trigger": [Function],
+          },
+        ],
+        "parent": undefined,
+      },
+      "setupContext": null,
+      "setupState": {
+        "VTU_COMPONENT": {},
+      },
+      "slots": {},
+      "slotsProxy": null,
+      "sp": null,
+      "subTree": {
+        "__v_isVNode": true,
+        "__v_skip": true,
+        "anchor": null,
+        "appContext": null,
+        "children": null,
+        "component": {
+          "a": null,
+          "accessCache": {},
+          "appContext": {
+            "app": [Circular],
+            "components": {
+              "transition": {
+                "name": "transition",
+              },
+              "transition-group": {
+                "name": "transition-group",
+              },
+            },
+            "config": {
+              "compilerOptions": {},
+              "errorHandler": undefined,
+              "globalProperties": {},
+              "isNativeTag": [Function],
+              "optionMergeStrategies": {},
+              "performance": false,
+              "warnHandler": undefined,
+            },
+            "directives": {},
+            "emitsCache": WeakMap {},
+            "mixins": [
+              {
+                "beforeCreate": [Function],
+              },
+            ],
+            "optionsCache": WeakMap {},
+            "propsCache": WeakMap {},
+            "provides": {},
+            "reload": [Function],
+          },
+          "asyncDep": null,
+          "asyncResolved": false,
+          "attrs": {},
+          "attrsProxy": null,
+          "bc": null,
+          "bm": null,
+          "bu": null,
+          "bum": null,
+          "c": null,
+          "components": {},
+          "ctx": {
+            "acronym": undefined,
+            "endDateString": "2024-01-01",
+            "lastUpdated": "23-01-01",
+            "projectId": 123,
+            "startDateString": "2024-01-01",
+            "statusDescription": "Completed",
+            "title": "Title",
+            "website": undefined,
+          },
+          "da": null,
+          "data": {},
+          "devtoolsRawSetupState": {
+            "cardSkeleton": {
+              "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/loading/cardSkeleton.vue",
+              "__scopeId": "data-v-b725e87d",
+              "render": [Function],
+            },
+            "projectStatus": {
+              "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/chip/projectStatus.vue",
+              "__name": "projectStatus",
+              "__scopeId": "data-v-c8efa418",
+              "props": {
+                "statusDescription": {
+                  "required": true,
+                  "type": [Function],
+                },
+              },
+              "render": [Function],
+              "setup": [Function],
+            },
+          },
+          "directives": null,
+          "ec": null,
+          "effect": ReactiveEffect {
+            "_depsLength": 5,
+            "_dirtyLevel": 0,
+            "_runnings": 0,
+            "_shouldSchedule": false,
+            "_trackId": 1,
+            "active": true,
+            "allowRecurse": true,
+            "deps": [
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+            ],
+            "fn": [Function],
+            "onTrack": undefined,
+            "onTrigger": undefined,
+            "scheduler": [Function],
+            "trigger": [Function],
+          },
+          "emit": [Function],
+          "emitsOptions": null,
+          "emitted": null,
+          "exposeProxy": {},
+          "exposed": {},
+          "inheritAttrs": undefined,
+          "isDeactivated": false,
+          "isMounted": true,
+          "isUnmounted": false,
+          "m": null,
+          "next": null,
+          "parent": [Circular],
+          "props": {
+            "acronym": undefined,
+            "endDateString": "2024-01-01",
+            "lastUpdated": "23-01-01",
+            "projectId": 123,
+            "startDateString": "2024-01-01",
+            "statusDescription": "Completed",
+            "title": "Title",
+            "website": undefined,
+          },
+          "propsDefaults": {},
+          "propsOptions": [
+            {
+              "acronym": {
+                "0": false,
+                "1": true,
+                "required": false,
+                "type": [Function],
+              },
+              "endDateString": {
+                "0": false,
+                "1": true,
+                "required": false,
+                "type": [Function],
+              },
+              "lastUpdated": {
+                "0": false,
+                "1": true,
+                "required": false,
+                "type": [Function],
+              },
+              "projectId": {
+                "0": false,
+                "1": true,
+                "required": true,
+                "type": [Function],
+              },
+              "startDateString": {
+                "0": false,
+                "1": true,
+                "required": false,
+                "type": [Function],
+              },
+              "statusDescription": {
+                "0": false,
+                "1": true,
+                "required": false,
+                "type": [Function],
+              },
+              "title": {
+                "0": false,
+                "1": true,
+                "required": true,
+                "type": [Function],
+              },
+              "website": {
+                "0": false,
+                "1": true,
+                "required": false,
+                "type": [Function],
+              },
+            },
+            [],
+          ],
+          "provides": {},
+          "proxy": {
+            "acronym": undefined,
+            "endDateString": "2024-01-01",
+            "lastUpdated": "23-01-01",
+            "projectId": 123,
+            "startDateString": "2024-01-01",
+            "statusDescription": "Completed",
+            "title": "Title",
+            "website": undefined,
+          },
+          "refs": {},
+          "render": [Function],
+          "renderCache": [],
+          "root": [Circular],
+          "rtc": null,
+          "rtg": null,
+          "scope": EffectScope {
+            "_active": true,
+            "cleanups": [],
+            "detached": true,
+            "effects": [
+              ReactiveEffect {
+                "_depsLength": 5,
+                "_dirtyLevel": 0,
+                "_runnings": 0,
+                "_shouldSchedule": false,
+                "_trackId": 1,
+                "active": true,
+                "allowRecurse": true,
+                "deps": [
+                  Map {
+                    [Circular] => 1,
+                  },
+                  Map {
+                    [Circular] => 1,
+                  },
+                  Map {
+                    [Circular] => 1,
+                  },
+                  Map {
+                    [Circular] => 1,
+                  },
+                  Map {
+                    [Circular] => 1,
+                  },
+                ],
+                "fn": [Function],
+                "onTrack": undefined,
+                "onTrigger": undefined,
+                "scheduler": [Function],
+                "trigger": [Function],
+              },
+            ],
+            "parent": undefined,
+          },
+          "setupContext": {
+            "attrs": {},
+            "emit": [Function],
+            "expose": [Function],
+            "slots": {},
+          },
+          "setupState": {
+            "cardSkeleton": {
+              "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/loading/cardSkeleton.vue",
+              "__scopeId": "data-v-b725e87d",
+              "render": [Function],
+            },
+            "projectStatus": {
+              "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/chip/projectStatus.vue",
+              "__name": "projectStatus",
+              "__scopeId": "data-v-c8efa418",
+              "props": {
+                "statusDescription": {
+                  "required": true,
+                  "type": [Function],
+                },
+              },
+              "render": [Function],
+              "setup": [Function],
+            },
+          },
+          "slots": {},
+          "slotsProxy": {},
+          "sp": null,
+          "subTree": {
+            "__v_isVNode": true,
+            "__v_skip": true,
+            "anchor": null,
+            "appContext": null,
+            "children": [
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": "Title",
+                    "component": null,
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <p
+                      class="projectSummaryCard__title"
+                      data-test="projectCard-title"
+                      data-v-7b12e235=""
+                    >
+                      Title
+                    </p>,
+                    "key": null,
+                    "patchFlag": 1,
+                    "props": {
+                      "class": "projectSummaryCard__title",
+                      "data-test": "projectCard-title",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-7b12e235",
+                    "shapeFlag": 9,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "p",
+                  },
+                ],
+                "component": null,
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <div
+                  class="projectSummaryCard__header"
+                  data-v-7b12e235=""
+                >
+                  <p
+                    class="projectSummaryCard__title"
+                    data-test="projectCard-title"
+                    data-v-7b12e235=""
+                  >
+                    Title
+                  </p>
+                </div>,
+                "key": null,
+                "patchFlag": 0,
+                "props": {
+                  "class": "projectSummaryCard__header",
+                },
+                "ref": null,
+                "scopeId": "data-v-7b12e235",
+                "shapeFlag": 17,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "div",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": " Project Number: ",
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el":  Project Number: ,
+                        "key": null,
+                        "patchFlag": 0,
+                        "props": null,
+                        "ref": null,
+                        "scopeId": "data-v-7b12e235",
+                        "shapeFlag": 8,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": Symbol(v-txt),
+                      },
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": "123",
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el": <span
+                          data-v-7b12e235=""
+                        >
+                          123
+                        </span>,
+                        "key": null,
+                        "patchFlag": 1,
+                        "props": null,
+                        "ref": null,
+                        "scopeId": "data-v-7b12e235",
+                        "shapeFlag": 9,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": "span",
+                      },
+                    ],
+                    "component": null,
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <div
+                      class="projectSummaryCard__summary"
+                      data-v-7b12e235=""
+                    >
+                       Project Number: 
+                      <span
+                        data-v-7b12e235=""
+                      >
+                        123
+                      </span>
+                    </div>,
+                    "key": null,
+                    "patchFlag": 0,
+                    "props": {
+                      "class": "projectSummaryCard__summary",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-7b12e235",
+                    "shapeFlag": 17,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "div",
+                  },
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": " Project Start Date: ",
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el":  Project Start Date: ,
+                        "key": null,
+                        "patchFlag": 0,
+                        "props": null,
+                        "ref": null,
+                        "scopeId": "data-v-7b12e235",
+                        "shapeFlag": 8,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": Symbol(v-txt),
+                      },
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": "2024-01-01",
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el": <span
+                          data-v-7b12e235=""
+                        >
+                          2024-01-01
+                        </span>,
+                        "key": null,
+                        "patchFlag": 1,
+                        "props": null,
+                        "ref": null,
+                        "scopeId": "data-v-7b12e235",
+                        "shapeFlag": 9,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": "span",
+                      },
+                    ],
+                    "component": null,
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <div
+                      class="projectSummaryCard__summary"
+                      data-v-7b12e235=""
+                    >
+                       Project Start Date: 
+                      <span
+                        data-v-7b12e235=""
+                      >
+                        2024-01-01
+                      </span>
+                    </div>,
+                    "key": null,
+                    "patchFlag": 0,
+                    "props": {
+                      "class": "projectSummaryCard__summary",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-7b12e235",
+                    "shapeFlag": 17,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "div",
+                  },
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": " Project End Date: ",
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el":  Project End Date: ,
+                        "key": null,
+                        "patchFlag": 0,
+                        "props": null,
+                        "ref": null,
+                        "scopeId": "data-v-7b12e235",
+                        "shapeFlag": 8,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": Symbol(v-txt),
+                      },
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": "2024-01-01",
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el": <span
+                          data-v-7b12e235=""
+                        >
+                          2024-01-01
+                        </span>,
+                        "key": null,
+                        "patchFlag": 1,
+                        "props": null,
+                        "ref": null,
+                        "scopeId": "data-v-7b12e235",
+                        "shapeFlag": 9,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": "span",
+                      },
+                    ],
+                    "component": null,
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <div
+                      class="projectSummaryCard__summary"
+                      data-v-7b12e235=""
+                    >
+                       Project End Date: 
+                      <span
+                        data-v-7b12e235=""
+                      >
+                        2024-01-01
+                      </span>
+                    </div>,
+                    "key": null,
+                    "patchFlag": 0,
+                    "props": {
+                      "class": "projectSummaryCard__summary",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-7b12e235",
+                    "shapeFlag": 17,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "div",
+                  },
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": " Last updated: ",
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el":  Last updated: ,
+                        "key": null,
+                        "patchFlag": 0,
+                        "props": null,
+                        "ref": null,
+                        "scopeId": "data-v-7b12e235",
+                        "shapeFlag": 8,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": Symbol(v-txt),
+                      },
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": "23-01-01",
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el": <span
+                          data-v-7b12e235=""
+                        >
+                          23-01-01
+                        </span>,
+                        "key": null,
+                        "patchFlag": 1,
+                        "props": null,
+                        "ref": null,
+                        "scopeId": "data-v-7b12e235",
+                        "shapeFlag": 9,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": "span",
+                      },
+                    ],
+                    "component": null,
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <div
+                      class="projectSummaryCard__summary"
+                      data-v-7b12e235=""
+                    >
+                       Last updated: 
+                      <span
+                        data-v-7b12e235=""
+                      >
+                        23-01-01
+                      </span>
+                    </div>,
+                    "key": null,
+                    "patchFlag": 0,
+                    "props": {
+                      "class": "projectSummaryCard__summary",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-7b12e235",
+                    "shapeFlag": 17,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "div",
+                  },
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": null,
+                        "component": {
+                          "a": null,
+                          "accessCache": {},
+                          "appContext": {
+                            "app": [Circular],
+                            "components": {
+                              "transition": {
+                                "name": "transition",
+                              },
+                              "transition-group": {
+                                "name": "transition-group",
+                              },
+                            },
+                            "config": {
+                              "compilerOptions": {},
+                              "errorHandler": undefined,
+                              "globalProperties": {},
+                              "isNativeTag": [Function],
+                              "optionMergeStrategies": {},
+                              "performance": false,
+                              "warnHandler": undefined,
+                            },
+                            "directives": {},
+                            "emitsCache": WeakMap {},
+                            "mixins": [
+                              {
+                                "beforeCreate": [Function],
+                              },
+                            ],
+                            "optionsCache": WeakMap {},
+                            "propsCache": WeakMap {},
+                            "provides": {},
+                            "reload": [Function],
+                          },
+                          "asyncDep": null,
+                          "asyncResolved": false,
+                          "attrs": {},
+                          "attrsProxy": null,
+                          "bc": null,
+                          "bm": null,
+                          "bu": null,
+                          "bum": null,
+                          "c": null,
+                          "components": null,
+                          "ctx": {
+                            "statusDescription": "Completed",
+                          },
+                          "da": null,
+                          "data": {},
+                          "devtoolsRawSetupState": {
+                            "StatusDescriptionEnum": {
+                              "ACTIVE": "Active",
+                              "CANCELED": "Canceled",
+                              "COMPLETED": "Completed",
+                            },
+                            "getStatusIcon": [Function],
+                          },
+                          "directives": null,
+                          "ec": null,
+                          "effect": ReactiveEffect {
+                            "_depsLength": 1,
+                            "_dirtyLevel": 0,
+                            "_runnings": 0,
+                            "_shouldSchedule": false,
+                            "_trackId": 1,
+                            "active": true,
+                            "allowRecurse": true,
+                            "deps": [
+                              Map {
+                                [Circular] => 1,
+                              },
+                            ],
+                            "fn": [Function],
+                            "onTrack": undefined,
+                            "onTrigger": undefined,
+                            "scheduler": [Function],
+                            "trigger": [Function],
+                          },
+                          "emit": [Function],
+                          "emitsOptions": null,
+                          "emitted": null,
+                          "exposeProxy": null,
+                          "exposed": {},
+                          "inheritAttrs": undefined,
+                          "isDeactivated": false,
+                          "isMounted": true,
+                          "isUnmounted": false,
+                          "m": null,
+                          "next": null,
+                          "parent": [Circular],
+                          "props": {
+                            "statusDescription": "Completed",
+                          },
+                          "propsDefaults": {},
+                          "propsOptions": [
+                            {
+                              "statusDescription": {
+                                "0": false,
+                                "1": true,
+                                "required": true,
+                                "type": [Function],
+                              },
+                            },
+                            [],
+                          ],
+                          "provides": {},
+                          "proxy": {
+                            "statusDescription": "Completed",
+                          },
+                          "refs": {},
+                          "render": [Function],
+                          "renderCache": [],
+                          "root": [Circular],
+                          "rtc": null,
+                          "rtg": null,
+                          "scope": EffectScope {
+                            "_active": true,
+                            "cleanups": [],
+                            "detached": true,
+                            "effects": [
+                              ReactiveEffect {
+                                "_depsLength": 1,
+                                "_dirtyLevel": 0,
+                                "_runnings": 0,
+                                "_shouldSchedule": false,
+                                "_trackId": 1,
+                                "active": true,
+                                "allowRecurse": true,
+                                "deps": [
+                                  Map {
+                                    [Circular] => 1,
+                                  },
+                                ],
+                                "fn": [Function],
+                                "onTrack": undefined,
+                                "onTrigger": undefined,
+                                "scheduler": [Function],
+                                "trigger": [Function],
+                              },
+                            ],
+                            "parent": undefined,
+                          },
+                          "setupContext": {
+                            "attrs": {},
+                            "emit": [Function],
+                            "expose": [Function],
+                            "slots": {},
+                          },
+                          "setupState": {
+                            "StatusDescriptionEnum": {
+                              "ACTIVE": "Active",
+                              "CANCELED": "Canceled",
+                              "COMPLETED": "Completed",
+                            },
+                            "getStatusIcon": [Function],
+                          },
+                          "slots": {},
+                          "slotsProxy": {},
+                          "sp": null,
+                          "subTree": {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": [
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": [
+                                  {
+                                    "__v_isVNode": true,
+                                    "__v_skip": true,
+                                    "anchor": null,
+                                    "appContext": null,
+                                    "children": null,
+                                    "component": null,
+                                    "ctx": [Circular],
+                                    "dirs": null,
+                                    "dynamicChildren": [],
+                                    "dynamicProps": [
+                                      "name",
+                                    ],
+                                    "el": <iconcss
+                                      class="icon"
+                                      data-v-c8efa418=""
+                                      name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                                    />,
+                                    "key": "Completed",
+                                    "patchFlag": 8,
+                                    "props": {
+                                      "class": "icon",
+                                      "key": "Completed",
+                                      "name": "streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form",
+                                    },
+                                    "ref": null,
+                                    "scopeId": "data-v-c8efa418",
+                                    "shapeFlag": 1,
+                                    "slotScopeIds": null,
+                                    "ssContent": null,
+                                    "ssFallback": null,
+                                    "staticCount": 0,
+                                    "suspense": null,
+                                    "target": null,
+                                    "targetAnchor": null,
+                                    "transition": null,
+                                    "type": "IconCSS",
+                                  },
+                                ],
+                                "component": null,
+                                "ctx": [Circular],
+                                "dirs": null,
+                                "dynamicChildren": null,
+                                "dynamicProps": null,
+                                "el": <clientonly
+                                  data-v-c8efa418=""
+                                >
+                                  <iconcss
+                                    class="icon"
+                                    data-v-c8efa418=""
+                                    name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                                  />
+                                </clientonly>,
+                                "key": null,
+                                "patchFlag": 0,
+                                "props": null,
+                                "ref": null,
+                                "scopeId": "data-v-c8efa418",
+                                "shapeFlag": 17,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": "ClientOnly",
+                              },
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": " Completed",
+                                "component": null,
+                                "ctx": [Circular],
+                                "dirs": null,
+                                "dynamicChildren": null,
+                                "dynamicProps": null,
+                                "el":  Completed,
+                                "key": null,
+                                "patchFlag": 1,
+                                "props": null,
+                                "ref": null,
+                                "scopeId": "data-v-c8efa418",
+                                "shapeFlag": 8,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": Symbol(v-txt),
+                              },
+                            ],
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": [
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": null,
+                                "component": null,
+                                "ctx": [Circular],
+                                "dirs": null,
+                                "dynamicChildren": [],
+                                "dynamicProps": [
+                                  "name",
+                                ],
+                                "el": <iconcss
+                                  class="icon"
+                                  data-v-c8efa418=""
+                                  name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                                />,
+                                "key": "Completed",
+                                "patchFlag": 8,
+                                "props": {
+                                  "class": "icon",
+                                  "key": "Completed",
+                                  "name": "streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form",
+                                },
+                                "ref": null,
+                                "scopeId": "data-v-c8efa418",
+                                "shapeFlag": 1,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": "IconCSS",
+                              },
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": " Completed",
+                                "component": null,
+                                "ctx": [Circular],
+                                "dirs": null,
+                                "dynamicChildren": null,
+                                "dynamicProps": null,
+                                "el":  Completed,
+                                "key": null,
+                                "patchFlag": 1,
+                                "props": null,
+                                "ref": null,
+                                "scopeId": "data-v-c8efa418",
+                                "shapeFlag": 8,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": Symbol(v-txt),
+                              },
+                            ],
+                            "dynamicProps": null,
+                            "el": <span
+                              class="projectStatus projectStatus--completed"
+                              data-v-7b12e235=""
+                              data-v-c8efa418=""
+                            >
+                              <clientonly
+                                data-v-c8efa418=""
+                              >
+                                <iconcss
+                                  class="icon"
+                                  data-v-c8efa418=""
+                                  name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                                />
+                              </clientonly>
+                               Completed
+                            </span>,
+                            "key": null,
+                            "patchFlag": 2,
+                            "props": {
+                              "class": "projectStatus projectStatus--completed",
+                            },
+                            "ref": null,
+                            "scopeId": "data-v-c8efa418",
+                            "shapeFlag": 17,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "transition": null,
+                            "type": "span",
+                          },
+                          "suspense": null,
+                          "suspenseId": 0,
+                          "type": {
+                            "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/chip/projectStatus.vue",
+                            "__name": "projectStatus",
+                            "__scopeId": "data-v-c8efa418",
+                            "props": {
+                              "statusDescription": {
+                                "required": true,
+                                "type": [Function],
+                              },
+                            },
+                            "render": [Function],
+                            "setup": [Function],
+                          },
+                          "u": null,
+                          "uid": 2,
+                          "um": null,
+                          "update": [Function],
+                          "vnode": [Circular],
+                          "withProxy": null,
+                        },
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": [
+                          "status-description",
+                        ],
+                        "el": <span
+                          class="projectStatus projectStatus--completed"
+                          data-v-7b12e235=""
+                          data-v-c8efa418=""
+                        >
+                          <clientonly
+                            data-v-c8efa418=""
+                          >
+                            <iconcss
+                              class="icon"
+                              data-v-c8efa418=""
+                              name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                            />
+                          </clientonly>
+                           Completed
+                        </span>,
+                        "key": null,
+                        "patchFlag": 8,
+                        "props": {
+                          "status-description": "Completed",
+                        },
+                        "ref": null,
+                        "scopeId": "data-v-7b12e235",
+                        "shapeFlag": 4,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": {
+                          "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/chip/projectStatus.vue",
+                          "__name": "projectStatus",
+                          "__scopeId": "data-v-c8efa418",
+                          "props": {
+                            "statusDescription": {
+                              "required": true,
+                              "type": [Function],
+                            },
+                          },
+                          "render": [Function],
+                          "setup": [Function],
+                        },
+                      },
+                    ],
+                    "component": null,
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": null,
+                        "component": {
+                          "a": null,
+                          "accessCache": {
+                            "@@__IMMUTABLE_ITERABLE__@@": 0,
+                            "@@__IMMUTABLE_RECORD__@@": 0,
+                            "_isMockFunction": 0,
+                            "hasAttribute": 0,
+                            "nodeType": 0,
+                            "statusDescription": 3,
+                            "tagName": 0,
+                            "toJSON": 0,
+                            Symbol(Symbol.toStringTag): 0,
+                          },
+                          "appContext": {
+                            "app": [Circular],
+                            "components": {
+                              "transition": {
+                                "name": "transition",
+                              },
+                              "transition-group": {
+                                "name": "transition-group",
+                              },
+                            },
+                            "config": {
+                              "compilerOptions": {},
+                              "errorHandler": undefined,
+                              "globalProperties": {},
+                              "isNativeTag": [Function],
+                              "optionMergeStrategies": {},
+                              "performance": false,
+                              "warnHandler": undefined,
+                            },
+                            "directives": {},
+                            "emitsCache": WeakMap {},
+                            "mixins": [
+                              {
+                                "beforeCreate": [Function],
+                              },
+                            ],
+                            "optionsCache": WeakMap {},
+                            "propsCache": WeakMap {},
+                            "provides": {},
+                            "reload": [Function],
+                          },
+                          "asyncDep": null,
+                          "asyncResolved": false,
+                          "attrs": {},
+                          "attrsProxy": {},
+                          "bc": null,
+                          "bm": null,
+                          "bu": null,
+                          "bum": null,
+                          "c": null,
+                          "components": null,
+                          "ctx": {
+                            "statusDescription": "Completed",
+                          },
+                          "da": null,
+                          "data": {},
+                          "devtoolsRawSetupState": {
+                            "StatusDescriptionEnum": {
+                              "ACTIVE": "Active",
+                              "CANCELED": "Canceled",
+                              "COMPLETED": "Completed",
+                            },
+                            "getStatusIcon": [Function],
+                          },
+                          "directives": null,
+                          "ec": null,
+                          "effect": ReactiveEffect {
+                            "_depsLength": 1,
+                            "_dirtyLevel": 0,
+                            "_runnings": 0,
+                            "_shouldSchedule": false,
+                            "_trackId": 1,
+                            "active": true,
+                            "allowRecurse": true,
+                            "deps": [
+                              Map {
+                                [Circular] => 1,
+                              },
+                            ],
+                            "fn": [Function],
+                            "onTrack": undefined,
+                            "onTrigger": undefined,
+                            "scheduler": [Function],
+                            "trigger": [Function],
+                          },
+                          "emit": [Function],
+                          "emitsOptions": null,
+                          "emitted": null,
+                          "exposeProxy": null,
+                          "exposed": {},
+                          "inheritAttrs": undefined,
+                          "isDeactivated": false,
+                          "isMounted": true,
+                          "isUnmounted": false,
+                          "m": null,
+                          "next": null,
+                          "parent": [Circular],
+                          "props": {
+                            "statusDescription": "Completed",
+                          },
+                          "propsDefaults": {},
+                          "propsOptions": [
+                            {
+                              "statusDescription": {
+                                "0": false,
+                                "1": true,
+                                "required": true,
+                                "type": [Function],
+                              },
+                            },
+                            [],
+                          ],
+                          "provides": {},
+                          "proxy": {
+                            "statusDescription": "Completed",
+                          },
+                          "refs": {},
+                          "render": [Function],
+                          "renderCache": [],
+                          "root": [Circular],
+                          "rtc": null,
+                          "rtg": null,
+                          "scope": EffectScope {
+                            "_active": true,
+                            "cleanups": [],
+                            "detached": true,
+                            "effects": [
+                              ReactiveEffect {
+                                "_depsLength": 1,
+                                "_dirtyLevel": 0,
+                                "_runnings": 0,
+                                "_shouldSchedule": false,
+                                "_trackId": 1,
+                                "active": true,
+                                "allowRecurse": true,
+                                "deps": [
+                                  Map {
+                                    [Circular] => 1,
+                                  },
+                                ],
+                                "fn": [Function],
+                                "onTrack": undefined,
+                                "onTrigger": undefined,
+                                "scheduler": [Function],
+                                "trigger": [Function],
+                              },
+                            ],
+                            "parent": undefined,
+                          },
+                          "setupContext": {
+                            "attrs": {},
+                            "emit": [Function],
+                            "expose": [Function],
+                            "slots": {},
+                          },
+                          "setupState": {
+                            "StatusDescriptionEnum": {
+                              "ACTIVE": "Active",
+                              "CANCELED": "Canceled",
+                              "COMPLETED": "Completed",
+                            },
+                            "getStatusIcon": [Function],
+                          },
+                          "slots": {},
+                          "slotsProxy": {},
+                          "sp": null,
+                          "subTree": {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": [
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": [
+                                  {
+                                    "__v_isVNode": true,
+                                    "__v_skip": true,
+                                    "anchor": null,
+                                    "appContext": null,
+                                    "children": null,
+                                    "component": null,
+                                    "ctx": [Circular],
+                                    "dirs": null,
+                                    "dynamicChildren": [],
+                                    "dynamicProps": [
+                                      "name",
+                                    ],
+                                    "el": <iconcss
+                                      class="icon"
+                                      data-v-c8efa418=""
+                                      name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                                    />,
+                                    "key": "Completed",
+                                    "patchFlag": 8,
+                                    "props": {
+                                      "class": "icon",
+                                      "key": "Completed",
+                                      "name": "streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form",
+                                    },
+                                    "ref": null,
+                                    "scopeId": "data-v-c8efa418",
+                                    "shapeFlag": 1,
+                                    "slotScopeIds": null,
+                                    "ssContent": null,
+                                    "ssFallback": null,
+                                    "staticCount": 0,
+                                    "suspense": null,
+                                    "target": null,
+                                    "targetAnchor": null,
+                                    "transition": null,
+                                    "type": "IconCSS",
+                                  },
+                                ],
+                                "component": null,
+                                "ctx": [Circular],
+                                "dirs": null,
+                                "dynamicChildren": null,
+                                "dynamicProps": null,
+                                "el": <clientonly
+                                  data-v-c8efa418=""
+                                >
+                                  <iconcss
+                                    class="icon"
+                                    data-v-c8efa418=""
+                                    name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                                  />
+                                </clientonly>,
+                                "key": null,
+                                "patchFlag": 0,
+                                "props": null,
+                                "ref": null,
+                                "scopeId": "data-v-c8efa418",
+                                "shapeFlag": 17,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": "ClientOnly",
+                              },
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": " Completed",
+                                "component": null,
+                                "ctx": [Circular],
+                                "dirs": null,
+                                "dynamicChildren": null,
+                                "dynamicProps": null,
+                                "el":  Completed,
+                                "key": null,
+                                "patchFlag": 1,
+                                "props": null,
+                                "ref": null,
+                                "scopeId": "data-v-c8efa418",
+                                "shapeFlag": 8,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": Symbol(v-txt),
+                              },
+                            ],
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": [
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": null,
+                                "component": null,
+                                "ctx": [Circular],
+                                "dirs": null,
+                                "dynamicChildren": [],
+                                "dynamicProps": [
+                                  "name",
+                                ],
+                                "el": <iconcss
+                                  class="icon"
+                                  data-v-c8efa418=""
+                                  name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                                />,
+                                "key": "Completed",
+                                "patchFlag": 8,
+                                "props": {
+                                  "class": "icon",
+                                  "key": "Completed",
+                                  "name": "streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form",
+                                },
+                                "ref": null,
+                                "scopeId": "data-v-c8efa418",
+                                "shapeFlag": 1,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": "IconCSS",
+                              },
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": " Completed",
+                                "component": null,
+                                "ctx": [Circular],
+                                "dirs": null,
+                                "dynamicChildren": null,
+                                "dynamicProps": null,
+                                "el":  Completed,
+                                "key": null,
+                                "patchFlag": 1,
+                                "props": null,
+                                "ref": null,
+                                "scopeId": "data-v-c8efa418",
+                                "shapeFlag": 8,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": Symbol(v-txt),
+                              },
+                            ],
+                            "dynamicProps": null,
+                            "el": <span
+                              class="projectStatus projectStatus--completed"
+                              data-v-7b12e235=""
+                              data-v-c8efa418=""
+                            >
+                              <clientonly
+                                data-v-c8efa418=""
+                              >
+                                <iconcss
+                                  class="icon"
+                                  data-v-c8efa418=""
+                                  name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                                />
+                              </clientonly>
+                               Completed
+                            </span>,
+                            "key": null,
+                            "patchFlag": 2,
+                            "props": {
+                              "class": "projectStatus projectStatus--completed",
+                            },
+                            "ref": null,
+                            "scopeId": "data-v-c8efa418",
+                            "shapeFlag": 17,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "transition": null,
+                            "type": "span",
+                          },
+                          "suspense": null,
+                          "suspenseId": 0,
+                          "type": {
+                            "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/chip/projectStatus.vue",
+                            "__name": "projectStatus",
+                            "__scopeId": "data-v-c8efa418",
+                            "props": {
+                              "statusDescription": {
+                                "required": true,
+                                "type": [Function],
+                              },
+                            },
+                            "render": [Function],
+                            "setup": [Function],
+                          },
+                          "u": null,
+                          "uid": 2,
+                          "um": null,
+                          "update": [Function],
+                          "vnode": [Circular],
+                          "withProxy": null,
+                        },
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": [
+                          "status-description",
+                        ],
+                        "el": <span
+                          class="projectStatus projectStatus--completed"
+                          data-v-7b12e235=""
+                          data-v-c8efa418=""
+                        >
+                          <clientonly
+                            data-v-c8efa418=""
+                          >
+                            <iconcss
+                              class="icon"
+                              data-v-c8efa418=""
+                              name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                            />
+                          </clientonly>
+                           Completed
+                        </span>,
+                        "key": null,
+                        "patchFlag": 8,
+                        "props": {
+                          "status-description": "Completed",
+                        },
+                        "ref": null,
+                        "scopeId": "data-v-7b12e235",
+                        "shapeFlag": 4,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": {
+                          "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/chip/projectStatus.vue",
+                          "__name": "projectStatus",
+                          "__scopeId": "data-v-c8efa418",
+                          "props": {
+                            "statusDescription": {
+                              "required": true,
+                              "type": [Function],
+                            },
+                          },
+                          "render": [Function],
+                          "setup": [Function],
+                        },
+                      },
+                    ],
+                    "dynamicProps": null,
+                    "el": <div
+                      class="projectSummaryCard__projectStatus"
+                      data-test="projectCard-status"
+                      data-v-7b12e235=""
+                    >
+                      <span
+                        class="projectStatus projectStatus--completed"
+                        data-v-7b12e235=""
+                        data-v-c8efa418=""
+                      >
+                        <clientonly
+                          data-v-c8efa418=""
+                        >
+                          <iconcss
+                            class="icon"
+                            data-v-c8efa418=""
+                            name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                          />
+                        </clientonly>
+                         Completed
+                      </span>
+                    </div>,
+                    "key": 0,
+                    "patchFlag": 0,
+                    "props": {
+                      "class": "projectSummaryCard__projectStatus",
+                      "data-test": "projectCard-status",
+                      "key": 0,
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-7b12e235",
+                    "shapeFlag": 17,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "div",
+                  },
+                ],
+                "component": null,
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <div
+                  class="projectSummaryCard__content"
+                  data-v-7b12e235=""
+                >
+                  <div
+                    class="projectSummaryCard__summary"
+                    data-v-7b12e235=""
+                  >
+                     Project Number: 
+                    <span
+                      data-v-7b12e235=""
+                    >
+                      123
+                    </span>
+                  </div>
+                  <div
+                    class="projectSummaryCard__summary"
+                    data-v-7b12e235=""
+                  >
+                     Project Start Date: 
+                    <span
+                      data-v-7b12e235=""
+                    >
+                      2024-01-01
+                    </span>
+                  </div>
+                  <div
+                    class="projectSummaryCard__summary"
+                    data-v-7b12e235=""
+                  >
+                     Project End Date: 
+                    <span
+                      data-v-7b12e235=""
+                    >
+                      2024-01-01
+                    </span>
+                  </div>
+                  <div
+                    class="projectSummaryCard__summary"
+                    data-v-7b12e235=""
+                  >
+                     Last updated: 
+                    <span
+                      data-v-7b12e235=""
+                    >
+                      23-01-01
+                    </span>
+                  </div>
+                  <div
+                    class="projectSummaryCard__projectStatus"
+                    data-test="projectCard-status"
+                    data-v-7b12e235=""
+                  >
+                    <span
+                      class="projectStatus projectStatus--completed"
+                      data-v-7b12e235=""
+                      data-v-c8efa418=""
+                    >
+                      <clientonly
+                        data-v-c8efa418=""
+                      >
+                        <iconcss
+                          class="icon"
+                          data-v-c8efa418=""
+                          name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                        />
+                      </clientonly>
+                       Completed
+                    </span>
+                  </div>
+                </div>,
+                "key": null,
+                "patchFlag": 0,
+                "props": {
+                  "class": "projectSummaryCard__content",
+                },
+                "ref": null,
+                "scopeId": "data-v-7b12e235",
+                "shapeFlag": 17,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "div",
+              },
+            ],
+            "component": null,
+            "ctx": [Circular],
+            "dirs": null,
+            "dynamicChildren": [
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": "Title",
+                "component": null,
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <p
+                  class="projectSummaryCard__title"
+                  data-test="projectCard-title"
+                  data-v-7b12e235=""
+                >
+                  Title
+                </p>,
+                "key": null,
+                "patchFlag": 1,
+                "props": {
+                  "class": "projectSummaryCard__title",
+                  "data-test": "projectCard-title",
+                },
+                "ref": null,
+                "scopeId": "data-v-7b12e235",
+                "shapeFlag": 9,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "p",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": "123",
+                "component": null,
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <span
+                  data-v-7b12e235=""
+                >
+                  123
+                </span>,
+                "key": null,
+                "patchFlag": 1,
+                "props": null,
+                "ref": null,
+                "scopeId": "data-v-7b12e235",
+                "shapeFlag": 9,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "span",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": "2024-01-01",
+                "component": null,
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <span
+                  data-v-7b12e235=""
+                >
+                  2024-01-01
+                </span>,
+                "key": null,
+                "patchFlag": 1,
+                "props": null,
+                "ref": null,
+                "scopeId": "data-v-7b12e235",
+                "shapeFlag": 9,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "span",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": "2024-01-01",
+                "component": null,
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <span
+                  data-v-7b12e235=""
+                >
+                  2024-01-01
+                </span>,
+                "key": null,
+                "patchFlag": 1,
+                "props": null,
+                "ref": null,
+                "scopeId": "data-v-7b12e235",
+                "shapeFlag": 9,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "span",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": "23-01-01",
+                "component": null,
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": null,
+                "dynamicProps": null,
+                "el": <span
+                  data-v-7b12e235=""
+                >
+                  23-01-01
+                </span>,
+                "key": null,
+                "patchFlag": 1,
+                "props": null,
+                "ref": null,
+                "scopeId": "data-v-7b12e235",
+                "shapeFlag": 9,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "span",
+              },
+              {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "children": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": null,
+                    "component": {
+                      "a": null,
+                      "accessCache": {
+                        "@@__IMMUTABLE_ITERABLE__@@": 0,
+                        "@@__IMMUTABLE_RECORD__@@": 0,
+                        "_isMockFunction": 0,
+                        "hasAttribute": 0,
+                        "nodeType": 0,
+                        "statusDescription": 3,
+                        "tagName": 0,
+                        "toJSON": 0,
+                        Symbol(Symbol.toStringTag): 0,
+                      },
+                      "appContext": {
+                        "app": [Circular],
+                        "components": {
+                          "transition": {
+                            "name": "transition",
+                          },
+                          "transition-group": {
+                            "name": "transition-group",
+                          },
+                        },
+                        "config": {
+                          "compilerOptions": {},
+                          "errorHandler": undefined,
+                          "globalProperties": {},
+                          "isNativeTag": [Function],
+                          "optionMergeStrategies": {},
+                          "performance": false,
+                          "warnHandler": undefined,
+                        },
+                        "directives": {},
+                        "emitsCache": WeakMap {},
+                        "mixins": [
+                          {
+                            "beforeCreate": [Function],
+                          },
+                        ],
+                        "optionsCache": WeakMap {},
+                        "propsCache": WeakMap {},
+                        "provides": {},
+                        "reload": [Function],
+                      },
+                      "asyncDep": null,
+                      "asyncResolved": false,
+                      "attrs": {},
+                      "attrsProxy": {},
+                      "bc": null,
+                      "bm": null,
+                      "bu": null,
+                      "bum": null,
+                      "c": null,
+                      "components": null,
+                      "ctx": {
+                        "statusDescription": "Completed",
+                      },
+                      "da": null,
+                      "data": {},
+                      "devtoolsRawSetupState": {
+                        "StatusDescriptionEnum": {
+                          "ACTIVE": "Active",
+                          "CANCELED": "Canceled",
+                          "COMPLETED": "Completed",
+                        },
+                        "getStatusIcon": [Function],
+                      },
+                      "directives": null,
+                      "ec": null,
+                      "effect": ReactiveEffect {
+                        "_depsLength": 1,
+                        "_dirtyLevel": 0,
+                        "_runnings": 0,
+                        "_shouldSchedule": false,
+                        "_trackId": 1,
+                        "active": true,
+                        "allowRecurse": true,
+                        "deps": [
+                          Map {
+                            [Circular] => 1,
+                          },
+                        ],
+                        "fn": [Function],
+                        "onTrack": undefined,
+                        "onTrigger": undefined,
+                        "scheduler": [Function],
+                        "trigger": [Function],
+                      },
+                      "emit": [Function],
+                      "emitsOptions": null,
+                      "emitted": null,
+                      "exposeProxy": null,
+                      "exposed": {},
+                      "inheritAttrs": undefined,
+                      "isDeactivated": false,
+                      "isMounted": true,
+                      "isUnmounted": false,
+                      "m": null,
+                      "next": null,
+                      "parent": [Circular],
+                      "props": {
+                        "statusDescription": "Completed",
+                      },
+                      "propsDefaults": {},
+                      "propsOptions": [
+                        {
+                          "statusDescription": {
+                            "0": false,
+                            "1": true,
+                            "required": true,
+                            "type": [Function],
+                          },
+                        },
+                        [],
+                      ],
+                      "provides": {},
+                      "proxy": {
+                        "statusDescription": "Completed",
+                      },
+                      "refs": {},
+                      "render": [Function],
+                      "renderCache": [],
+                      "root": [Circular],
+                      "rtc": null,
+                      "rtg": null,
+                      "scope": EffectScope {
+                        "_active": true,
+                        "cleanups": [],
+                        "detached": true,
+                        "effects": [
+                          ReactiveEffect {
+                            "_depsLength": 1,
+                            "_dirtyLevel": 0,
+                            "_runnings": 0,
+                            "_shouldSchedule": false,
+                            "_trackId": 1,
+                            "active": true,
+                            "allowRecurse": true,
+                            "deps": [
+                              Map {
+                                [Circular] => 1,
+                              },
+                            ],
+                            "fn": [Function],
+                            "onTrack": undefined,
+                            "onTrigger": undefined,
+                            "scheduler": [Function],
+                            "trigger": [Function],
+                          },
+                        ],
+                        "parent": undefined,
+                      },
+                      "setupContext": {
+                        "attrs": {},
+                        "emit": [Function],
+                        "expose": [Function],
+                        "slots": {},
+                      },
+                      "setupState": {
+                        "StatusDescriptionEnum": {
+                          "ACTIVE": "Active",
+                          "CANCELED": "Canceled",
+                          "COMPLETED": "Completed",
+                        },
+                        "getStatusIcon": [Function],
+                      },
+                      "slots": {},
+                      "slotsProxy": {},
+                      "sp": null,
+                      "subTree": {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": [
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": [
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": null,
+                                "component": null,
+                                "ctx": [Circular],
+                                "dirs": null,
+                                "dynamicChildren": [],
+                                "dynamicProps": [
+                                  "name",
+                                ],
+                                "el": <iconcss
+                                  class="icon"
+                                  data-v-c8efa418=""
+                                  name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                                />,
+                                "key": "Completed",
+                                "patchFlag": 8,
+                                "props": {
+                                  "class": "icon",
+                                  "key": "Completed",
+                                  "name": "streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form",
+                                },
+                                "ref": null,
+                                "scopeId": "data-v-c8efa418",
+                                "shapeFlag": 1,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": "IconCSS",
+                              },
+                            ],
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": null,
+                            "dynamicProps": null,
+                            "el": <clientonly
+                              data-v-c8efa418=""
+                            >
+                              <iconcss
+                                class="icon"
+                                data-v-c8efa418=""
+                                name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                              />
+                            </clientonly>,
+                            "key": null,
+                            "patchFlag": 0,
+                            "props": null,
+                            "ref": null,
+                            "scopeId": "data-v-c8efa418",
+                            "shapeFlag": 17,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "transition": null,
+                            "type": "ClientOnly",
+                          },
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": " Completed",
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": null,
+                            "dynamicProps": null,
+                            "el":  Completed,
+                            "key": null,
+                            "patchFlag": 1,
+                            "props": null,
+                            "ref": null,
+                            "scopeId": "data-v-c8efa418",
+                            "shapeFlag": 8,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "transition": null,
+                            "type": Symbol(v-txt),
+                          },
+                        ],
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": [
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": null,
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": [],
+                            "dynamicProps": [
+                              "name",
+                            ],
+                            "el": <iconcss
+                              class="icon"
+                              data-v-c8efa418=""
+                              name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                            />,
+                            "key": "Completed",
+                            "patchFlag": 8,
+                            "props": {
+                              "class": "icon",
+                              "key": "Completed",
+                              "name": "streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form",
+                            },
+                            "ref": null,
+                            "scopeId": "data-v-c8efa418",
+                            "shapeFlag": 1,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "transition": null,
+                            "type": "IconCSS",
+                          },
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": " Completed",
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": null,
+                            "dynamicProps": null,
+                            "el":  Completed,
+                            "key": null,
+                            "patchFlag": 1,
+                            "props": null,
+                            "ref": null,
+                            "scopeId": "data-v-c8efa418",
+                            "shapeFlag": 8,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "transition": null,
+                            "type": Symbol(v-txt),
+                          },
+                        ],
+                        "dynamicProps": null,
+                        "el": <span
+                          class="projectStatus projectStatus--completed"
+                          data-v-7b12e235=""
+                          data-v-c8efa418=""
+                        >
+                          <clientonly
+                            data-v-c8efa418=""
+                          >
+                            <iconcss
+                              class="icon"
+                              data-v-c8efa418=""
+                              name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                            />
+                          </clientonly>
+                           Completed
+                        </span>,
+                        "key": null,
+                        "patchFlag": 2,
+                        "props": {
+                          "class": "projectStatus projectStatus--completed",
+                        },
+                        "ref": null,
+                        "scopeId": "data-v-c8efa418",
+                        "shapeFlag": 17,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": "span",
+                      },
+                      "suspense": null,
+                      "suspenseId": 0,
+                      "type": {
+                        "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/chip/projectStatus.vue",
+                        "__name": "projectStatus",
+                        "__scopeId": "data-v-c8efa418",
+                        "props": {
+                          "statusDescription": {
+                            "required": true,
+                            "type": [Function],
+                          },
+                        },
+                        "render": [Function],
+                        "setup": [Function],
+                      },
+                      "u": null,
+                      "uid": 2,
+                      "um": null,
+                      "update": [Function],
+                      "vnode": [Circular],
+                      "withProxy": null,
+                    },
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": [
+                      "status-description",
+                    ],
+                    "el": <span
+                      class="projectStatus projectStatus--completed"
+                      data-v-7b12e235=""
+                      data-v-c8efa418=""
+                    >
+                      <clientonly
+                        data-v-c8efa418=""
+                      >
+                        <iconcss
+                          class="icon"
+                          data-v-c8efa418=""
+                          name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                        />
+                      </clientonly>
+                       Completed
+                    </span>,
+                    "key": null,
+                    "patchFlag": 8,
+                    "props": {
+                      "status-description": "Completed",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-7b12e235",
+                    "shapeFlag": 4,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": {
+                      "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/chip/projectStatus.vue",
+                      "__name": "projectStatus",
+                      "__scopeId": "data-v-c8efa418",
+                      "props": {
+                        "statusDescription": {
+                          "required": true,
+                          "type": [Function],
+                        },
+                      },
+                      "render": [Function],
+                      "setup": [Function],
+                    },
+                  },
+                ],
+                "component": null,
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": null,
+                    "component": {
+                      "a": null,
+                      "accessCache": {
+                        "@@__IMMUTABLE_ITERABLE__@@": 0,
+                        "@@__IMMUTABLE_RECORD__@@": 0,
+                        "_isMockFunction": 0,
+                        "hasAttribute": 0,
+                        "nodeType": 0,
+                        "statusDescription": 3,
+                        "tagName": 0,
+                        "toJSON": 0,
+                        Symbol(Symbol.toStringTag): 0,
+                      },
+                      "appContext": {
+                        "app": [Circular],
+                        "components": {
+                          "transition": {
+                            "name": "transition",
+                          },
+                          "transition-group": {
+                            "name": "transition-group",
+                          },
+                        },
+                        "config": {
+                          "compilerOptions": {},
+                          "errorHandler": undefined,
+                          "globalProperties": {},
+                          "isNativeTag": [Function],
+                          "optionMergeStrategies": {},
+                          "performance": false,
+                          "warnHandler": undefined,
+                        },
+                        "directives": {},
+                        "emitsCache": WeakMap {},
+                        "mixins": [
+                          {
+                            "beforeCreate": [Function],
+                          },
+                        ],
+                        "optionsCache": WeakMap {},
+                        "propsCache": WeakMap {},
+                        "provides": {},
+                        "reload": [Function],
+                      },
+                      "asyncDep": null,
+                      "asyncResolved": false,
+                      "attrs": {},
+                      "attrsProxy": {},
+                      "bc": null,
+                      "bm": null,
+                      "bu": null,
+                      "bum": null,
+                      "c": null,
+                      "components": null,
+                      "ctx": {
+                        "statusDescription": "Completed",
+                      },
+                      "da": null,
+                      "data": {},
+                      "devtoolsRawSetupState": {
+                        "StatusDescriptionEnum": {
+                          "ACTIVE": "Active",
+                          "CANCELED": "Canceled",
+                          "COMPLETED": "Completed",
+                        },
+                        "getStatusIcon": [Function],
+                      },
+                      "directives": null,
+                      "ec": null,
+                      "effect": ReactiveEffect {
+                        "_depsLength": 1,
+                        "_dirtyLevel": 0,
+                        "_runnings": 0,
+                        "_shouldSchedule": false,
+                        "_trackId": 1,
+                        "active": true,
+                        "allowRecurse": true,
+                        "deps": [
+                          Map {
+                            [Circular] => 1,
+                          },
+                        ],
+                        "fn": [Function],
+                        "onTrack": undefined,
+                        "onTrigger": undefined,
+                        "scheduler": [Function],
+                        "trigger": [Function],
+                      },
+                      "emit": [Function],
+                      "emitsOptions": null,
+                      "emitted": null,
+                      "exposeProxy": null,
+                      "exposed": {},
+                      "inheritAttrs": undefined,
+                      "isDeactivated": false,
+                      "isMounted": true,
+                      "isUnmounted": false,
+                      "m": null,
+                      "next": null,
+                      "parent": [Circular],
+                      "props": {
+                        "statusDescription": "Completed",
+                      },
+                      "propsDefaults": {},
+                      "propsOptions": [
+                        {
+                          "statusDescription": {
+                            "0": false,
+                            "1": true,
+                            "required": true,
+                            "type": [Function],
+                          },
+                        },
+                        [],
+                      ],
+                      "provides": {},
+                      "proxy": {
+                        "statusDescription": "Completed",
+                      },
+                      "refs": {},
+                      "render": [Function],
+                      "renderCache": [],
+                      "root": [Circular],
+                      "rtc": null,
+                      "rtg": null,
+                      "scope": EffectScope {
+                        "_active": true,
+                        "cleanups": [],
+                        "detached": true,
+                        "effects": [
+                          ReactiveEffect {
+                            "_depsLength": 1,
+                            "_dirtyLevel": 0,
+                            "_runnings": 0,
+                            "_shouldSchedule": false,
+                            "_trackId": 1,
+                            "active": true,
+                            "allowRecurse": true,
+                            "deps": [
+                              Map {
+                                [Circular] => 1,
+                              },
+                            ],
+                            "fn": [Function],
+                            "onTrack": undefined,
+                            "onTrigger": undefined,
+                            "scheduler": [Function],
+                            "trigger": [Function],
+                          },
+                        ],
+                        "parent": undefined,
+                      },
+                      "setupContext": {
+                        "attrs": {},
+                        "emit": [Function],
+                        "expose": [Function],
+                        "slots": {},
+                      },
+                      "setupState": {
+                        "StatusDescriptionEnum": {
+                          "ACTIVE": "Active",
+                          "CANCELED": "Canceled",
+                          "COMPLETED": "Completed",
+                        },
+                        "getStatusIcon": [Function],
+                      },
+                      "slots": {},
+                      "slotsProxy": {},
+                      "sp": null,
+                      "subTree": {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": [
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": [
+                              {
+                                "__v_isVNode": true,
+                                "__v_skip": true,
+                                "anchor": null,
+                                "appContext": null,
+                                "children": null,
+                                "component": null,
+                                "ctx": [Circular],
+                                "dirs": null,
+                                "dynamicChildren": [],
+                                "dynamicProps": [
+                                  "name",
+                                ],
+                                "el": <iconcss
+                                  class="icon"
+                                  data-v-c8efa418=""
+                                  name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                                />,
+                                "key": "Completed",
+                                "patchFlag": 8,
+                                "props": {
+                                  "class": "icon",
+                                  "key": "Completed",
+                                  "name": "streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form",
+                                },
+                                "ref": null,
+                                "scopeId": "data-v-c8efa418",
+                                "shapeFlag": 1,
+                                "slotScopeIds": null,
+                                "ssContent": null,
+                                "ssFallback": null,
+                                "staticCount": 0,
+                                "suspense": null,
+                                "target": null,
+                                "targetAnchor": null,
+                                "transition": null,
+                                "type": "IconCSS",
+                              },
+                            ],
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": null,
+                            "dynamicProps": null,
+                            "el": <clientonly
+                              data-v-c8efa418=""
+                            >
+                              <iconcss
+                                class="icon"
+                                data-v-c8efa418=""
+                                name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                              />
+                            </clientonly>,
+                            "key": null,
+                            "patchFlag": 0,
+                            "props": null,
+                            "ref": null,
+                            "scopeId": "data-v-c8efa418",
+                            "shapeFlag": 17,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "transition": null,
+                            "type": "ClientOnly",
+                          },
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": " Completed",
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": null,
+                            "dynamicProps": null,
+                            "el":  Completed,
+                            "key": null,
+                            "patchFlag": 1,
+                            "props": null,
+                            "ref": null,
+                            "scopeId": "data-v-c8efa418",
+                            "shapeFlag": 8,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "transition": null,
+                            "type": Symbol(v-txt),
+                          },
+                        ],
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": [
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": null,
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": [],
+                            "dynamicProps": [
+                              "name",
+                            ],
+                            "el": <iconcss
+                              class="icon"
+                              data-v-c8efa418=""
+                              name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                            />,
+                            "key": "Completed",
+                            "patchFlag": 8,
+                            "props": {
+                              "class": "icon",
+                              "key": "Completed",
+                              "name": "streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form",
+                            },
+                            "ref": null,
+                            "scopeId": "data-v-c8efa418",
+                            "shapeFlag": 1,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "transition": null,
+                            "type": "IconCSS",
+                          },
+                          {
+                            "__v_isVNode": true,
+                            "__v_skip": true,
+                            "anchor": null,
+                            "appContext": null,
+                            "children": " Completed",
+                            "component": null,
+                            "ctx": [Circular],
+                            "dirs": null,
+                            "dynamicChildren": null,
+                            "dynamicProps": null,
+                            "el":  Completed,
+                            "key": null,
+                            "patchFlag": 1,
+                            "props": null,
+                            "ref": null,
+                            "scopeId": "data-v-c8efa418",
+                            "shapeFlag": 8,
+                            "slotScopeIds": null,
+                            "ssContent": null,
+                            "ssFallback": null,
+                            "staticCount": 0,
+                            "suspense": null,
+                            "target": null,
+                            "targetAnchor": null,
+                            "transition": null,
+                            "type": Symbol(v-txt),
+                          },
+                        ],
+                        "dynamicProps": null,
+                        "el": <span
+                          class="projectStatus projectStatus--completed"
+                          data-v-7b12e235=""
+                          data-v-c8efa418=""
+                        >
+                          <clientonly
+                            data-v-c8efa418=""
+                          >
+                            <iconcss
+                              class="icon"
+                              data-v-c8efa418=""
+                              name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                            />
+                          </clientonly>
+                           Completed
+                        </span>,
+                        "key": null,
+                        "patchFlag": 2,
+                        "props": {
+                          "class": "projectStatus projectStatus--completed",
+                        },
+                        "ref": null,
+                        "scopeId": "data-v-c8efa418",
+                        "shapeFlag": 17,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": "span",
+                      },
+                      "suspense": null,
+                      "suspenseId": 0,
+                      "type": {
+                        "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/chip/projectStatus.vue",
+                        "__name": "projectStatus",
+                        "__scopeId": "data-v-c8efa418",
+                        "props": {
+                          "statusDescription": {
+                            "required": true,
+                            "type": [Function],
+                          },
+                        },
+                        "render": [Function],
+                        "setup": [Function],
+                      },
+                      "u": null,
+                      "uid": 2,
+                      "um": null,
+                      "update": [Function],
+                      "vnode": [Circular],
+                      "withProxy": null,
+                    },
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": [
+                      "status-description",
+                    ],
+                    "el": <span
+                      class="projectStatus projectStatus--completed"
+                      data-v-7b12e235=""
+                      data-v-c8efa418=""
+                    >
+                      <clientonly
+                        data-v-c8efa418=""
+                      >
+                        <iconcss
+                          class="icon"
+                          data-v-c8efa418=""
+                          name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                        />
+                      </clientonly>
+                       Completed
+                    </span>,
+                    "key": null,
+                    "patchFlag": 8,
+                    "props": {
+                      "status-description": "Completed",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-7b12e235",
+                    "shapeFlag": 4,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": {
+                      "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/chip/projectStatus.vue",
+                      "__name": "projectStatus",
+                      "__scopeId": "data-v-c8efa418",
+                      "props": {
+                        "statusDescription": {
+                          "required": true,
+                          "type": [Function],
+                        },
+                      },
+                      "render": [Function],
+                      "setup": [Function],
+                    },
+                  },
+                ],
+                "dynamicProps": null,
+                "el": <div
+                  class="projectSummaryCard__projectStatus"
+                  data-test="projectCard-status"
+                  data-v-7b12e235=""
+                >
+                  <span
+                    class="projectStatus projectStatus--completed"
+                    data-v-7b12e235=""
+                    data-v-c8efa418=""
+                  >
+                    <clientonly
+                      data-v-c8efa418=""
+                    >
+                      <iconcss
+                        class="icon"
+                        data-v-c8efa418=""
+                        name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                      />
+                    </clientonly>
+                     Completed
+                  </span>
+                </div>,
+                "key": 0,
+                "patchFlag": 0,
+                "props": {
+                  "class": "projectSummaryCard__projectStatus",
+                  "data-test": "projectCard-status",
+                  "key": 0,
+                },
+                "ref": null,
+                "scopeId": "data-v-7b12e235",
+                "shapeFlag": 17,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "div",
+              },
+            ],
+            "dynamicProps": [
+              "to",
+            ],
+            "el": <nuxt-link
+              class="projectSummaryCard"
+              data-test="projectCard"
+              data-v-7b12e235=""
+              to="[object Object]"
+            >
+              <div
+                class="projectSummaryCard__header"
+                data-v-7b12e235=""
+              >
+                <p
+                  class="projectSummaryCard__title"
+                  data-test="projectCard-title"
+                  data-v-7b12e235=""
+                >
+                  Title
+                </p>
+              </div>
+              <div
+                class="projectSummaryCard__content"
+                data-v-7b12e235=""
+              >
+                <div
+                  class="projectSummaryCard__summary"
+                  data-v-7b12e235=""
+                >
+                   Project Number: 
+                  <span
+                    data-v-7b12e235=""
+                  >
+                    123
+                  </span>
+                </div>
+                <div
+                  class="projectSummaryCard__summary"
+                  data-v-7b12e235=""
+                >
+                   Project Start Date: 
+                  <span
+                    data-v-7b12e235=""
+                  >
+                    2024-01-01
+                  </span>
+                </div>
+                <div
+                  class="projectSummaryCard__summary"
+                  data-v-7b12e235=""
+                >
+                   Project End Date: 
+                  <span
+                    data-v-7b12e235=""
+                  >
+                    2024-01-01
+                  </span>
+                </div>
+                <div
+                  class="projectSummaryCard__summary"
+                  data-v-7b12e235=""
+                >
+                   Last updated: 
+                  <span
+                    data-v-7b12e235=""
+                  >
+                    23-01-01
+                  </span>
+                </div>
+                <div
+                  class="projectSummaryCard__projectStatus"
+                  data-test="projectCard-status"
+                  data-v-7b12e235=""
+                >
+                  <span
+                    class="projectStatus projectStatus--completed"
+                    data-v-7b12e235=""
+                    data-v-c8efa418=""
+                  >
+                    <clientonly
+                      data-v-c8efa418=""
+                    >
+                      <iconcss
+                        class="icon"
+                        data-v-c8efa418=""
+                        name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                      />
+                    </clientonly>
+                     Completed
+                  </span>
+                </div>
+              </div>
+            </nuxt-link>,
+            "key": 1,
+            "patchFlag": 8,
+            "props": {
+              "class": "projectSummaryCard",
+              "data-test": "projectCard",
+              "key": 1,
+              "to": {
+                "name": "project-pid",
+                "params": {
+                  "pid": 123,
+                },
+              },
+            },
+            "ref": null,
+            "scopeId": "data-v-7b12e235",
+            "shapeFlag": 17,
+            "slotScopeIds": null,
+            "ssContent": null,
+            "ssFallback": null,
+            "staticCount": 0,
+            "suspense": null,
+            "target": null,
+            "targetAnchor": null,
+            "transition": null,
+            "type": "nuxt-link",
+          },
+          "suspense": null,
+          "suspenseId": 0,
+          "type": {
+            "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/projectSearchResults/projectSummaryCard.vue",
+            "__name": "projectSummaryCard",
+            "__scopeId": "data-v-7b12e235",
+            "components": {},
+            "props": {
+              "acronym": {
+                "required": false,
+                "type": [Function],
+              },
+              "endDateString": {
+                "required": false,
+                "type": [Function],
+              },
+              "lastUpdated": {
+                "required": false,
+                "type": [Function],
+              },
+              "projectId": {
+                "required": true,
+                "type": [Function],
+              },
+              "startDateString": {
+                "required": false,
+                "type": [Function],
+              },
+              "statusDescription": {
+                "required": false,
+                "type": [Function],
+              },
+              "title": {
+                "required": true,
+                "type": [Function],
+              },
+              "website": {
+                "required": false,
+                "type": [Function],
+              },
+            },
+            "render": [Function],
+            "setup": [Function],
+            "stubs": {
+              "ClientOnly": "<div><slot /><div>",
+              "IconCSS": "<div><slot /><div>",
+              "NuxtLink": {
+                "compatConfig": {
+                  "MODE": 3,
+                },
+                "name": "RouterLinkStub",
+                "props": {
+                  "custom": {
+                    "default": false,
+                    "type": [Function],
+                  },
+                  "to": {
+                    "required": true,
+                    "type": [
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                },
+                "render": [Function],
+              },
+            },
+          },
+          "u": null,
+          "uid": 1,
+          "um": null,
+          "update": [Function],
+          "vnode": [Circular],
+          "withProxy": null,
+        },
+        "ctx": [Circular],
+        "dirs": null,
+        "dynamicChildren": null,
+        "dynamicProps": null,
+        "el": <nuxt-link
+          class="projectSummaryCard"
+          data-test="projectCard"
+          data-v-7b12e235=""
+          to="[object Object]"
+        >
+          <div
+            class="projectSummaryCard__header"
+            data-v-7b12e235=""
+          >
+            <p
+              class="projectSummaryCard__title"
+              data-test="projectCard-title"
+              data-v-7b12e235=""
+            >
+              Title
+            </p>
+          </div>
+          <div
+            class="projectSummaryCard__content"
+            data-v-7b12e235=""
+          >
+            <div
+              class="projectSummaryCard__summary"
+              data-v-7b12e235=""
+            >
+               Project Number: 
+              <span
+                data-v-7b12e235=""
+              >
+                123
+              </span>
+            </div>
+            <div
+              class="projectSummaryCard__summary"
+              data-v-7b12e235=""
+            >
+               Project Start Date: 
+              <span
+                data-v-7b12e235=""
+              >
+                2024-01-01
+              </span>
+            </div>
+            <div
+              class="projectSummaryCard__summary"
+              data-v-7b12e235=""
+            >
+               Project End Date: 
+              <span
+                data-v-7b12e235=""
+              >
+                2024-01-01
+              </span>
+            </div>
+            <div
+              class="projectSummaryCard__summary"
+              data-v-7b12e235=""
+            >
+               Last updated: 
+              <span
+                data-v-7b12e235=""
+              >
+                23-01-01
+              </span>
+            </div>
+            <div
+              class="projectSummaryCard__projectStatus"
+              data-test="projectCard-status"
+              data-v-7b12e235=""
+            >
+              <span
+                class="projectStatus projectStatus--completed"
+                data-v-7b12e235=""
+                data-v-c8efa418=""
+              >
+                <clientonly
+                  data-v-c8efa418=""
+                >
+                  <iconcss
+                    class="icon"
+                    data-v-c8efa418=""
+                    name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                  />
+                </clientonly>
+                 Completed
+              </span>
+            </div>
+          </div>
+        </nuxt-link>,
+        "key": null,
+        "patchFlag": 0,
+        "props": {
+          "endDateString": "2024-01-01",
+          "lastUpdated": "23-01-01",
+          "projectId": 123,
+          "ref": "VTU_COMPONENT",
+          "startDateString": "2024-01-01",
+          "statusDescription": "Completed",
+          "title": "Title",
+        },
+        "ref": {
+          "f": false,
+          "i": [Circular],
+          "k": undefined,
+          "r": "VTU_COMPONENT",
+        },
+        "scopeId": null,
+        "shapeFlag": 4,
+        "slotScopeIds": null,
+        "ssContent": null,
+        "ssFallback": null,
+        "staticCount": 0,
+        "suspense": null,
+        "target": null,
+        "targetAnchor": null,
+        "transition": null,
+        "type": {
+          "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/projectSearchResults/projectSummaryCard.vue",
+          "__name": "projectSummaryCard",
+          "__scopeId": "data-v-7b12e235",
+          "components": {},
+          "props": {
+            "acronym": {
+              "required": false,
+              "type": [Function],
+            },
+            "endDateString": {
+              "required": false,
+              "type": [Function],
+            },
+            "lastUpdated": {
+              "required": false,
+              "type": [Function],
+            },
+            "projectId": {
+              "required": true,
+              "type": [Function],
+            },
+            "startDateString": {
+              "required": false,
+              "type": [Function],
+            },
+            "statusDescription": {
+              "required": false,
+              "type": [Function],
+            },
+            "title": {
+              "required": true,
+              "type": [Function],
+            },
+            "website": {
+              "required": false,
+              "type": [Function],
+            },
+          },
+          "render": [Function],
+          "setup": [Function],
+          "stubs": {
+            "ClientOnly": "<div><slot /><div>",
+            "IconCSS": "<div><slot /><div>",
+            "NuxtLink": {
+              "compatConfig": {
+                "MODE": 3,
+              },
+              "name": "RouterLinkStub",
+              "props": {
+                "custom": {
+                  "default": false,
+                  "type": [Function],
+                },
+                "to": {
+                  "required": true,
+                  "type": [
+                    [Function],
+                    [Function],
+                  ],
+                },
+              },
+              "render": [Function],
+            },
+          },
+        },
+      },
+      "suspense": null,
+      "suspenseId": 0,
+      "type": {
+        "name": "VTU_ROOT",
+        "render": [Function],
+        "setup": [Function],
+      },
+      "u": null,
+      "uid": 0,
+      "um": null,
+      "update": [Function],
+      "vnode": {
+        "__v_isVNode": true,
+        "__v_skip": true,
+        "anchor": null,
+        "appContext": {
+          "app": [Circular],
+          "components": {
+            "transition": {
+              "name": "transition",
+            },
+            "transition-group": {
+              "name": "transition-group",
+            },
+          },
+          "config": {
+            "compilerOptions": {},
+            "errorHandler": undefined,
+            "globalProperties": {},
+            "isNativeTag": [Function],
+            "optionMergeStrategies": {},
+            "performance": false,
+            "warnHandler": undefined,
+          },
+          "directives": {},
+          "emitsCache": WeakMap {},
+          "mixins": [
+            {
+              "beforeCreate": [Function],
+            },
+          ],
+          "optionsCache": WeakMap {},
+          "propsCache": WeakMap {},
+          "provides": {},
+          "reload": [Function],
+        },
+        "children": null,
+        "component": [Circular],
+        "ctx": null,
+        "dirs": null,
+        "dynamicChildren": null,
+        "dynamicProps": null,
+        "el": <nuxt-link
+          class="projectSummaryCard"
+          data-test="projectCard"
+          data-v-7b12e235=""
+          to="[object Object]"
+        >
+          <div
+            class="projectSummaryCard__header"
+            data-v-7b12e235=""
+          >
+            <p
+              class="projectSummaryCard__title"
+              data-test="projectCard-title"
+              data-v-7b12e235=""
+            >
+              Title
+            </p>
+          </div>
+          <div
+            class="projectSummaryCard__content"
+            data-v-7b12e235=""
+          >
+            <div
+              class="projectSummaryCard__summary"
+              data-v-7b12e235=""
+            >
+               Project Number: 
+              <span
+                data-v-7b12e235=""
+              >
+                123
+              </span>
+            </div>
+            <div
+              class="projectSummaryCard__summary"
+              data-v-7b12e235=""
+            >
+               Project Start Date: 
+              <span
+                data-v-7b12e235=""
+              >
+                2024-01-01
+              </span>
+            </div>
+            <div
+              class="projectSummaryCard__summary"
+              data-v-7b12e235=""
+            >
+               Project End Date: 
+              <span
+                data-v-7b12e235=""
+              >
+                2024-01-01
+              </span>
+            </div>
+            <div
+              class="projectSummaryCard__summary"
+              data-v-7b12e235=""
+            >
+               Last updated: 
+              <span
+                data-v-7b12e235=""
+              >
+                23-01-01
+              </span>
+            </div>
+            <div
+              class="projectSummaryCard__projectStatus"
+              data-test="projectCard-status"
+              data-v-7b12e235=""
+            >
+              <span
+                class="projectStatus projectStatus--completed"
+                data-v-7b12e235=""
+                data-v-c8efa418=""
+              >
+                <clientonly
+                  data-v-c8efa418=""
+                >
+                  <iconcss
+                    class="icon"
+                    data-v-c8efa418=""
+                    name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+                  />
+                </clientonly>
+                 Completed
+              </span>
+            </div>
+          </div>
+        </nuxt-link>,
+        "key": null,
+        "patchFlag": 0,
+        "props": null,
+        "ref": null,
+        "scopeId": null,
+        "shapeFlag": 4,
+        "slotScopeIds": null,
+        "ssContent": null,
+        "ssFallback": null,
+        "staticCount": 0,
+        "suspense": null,
+        "target": null,
+        "targetAnchor": null,
+        "transition": null,
+        "type": {
+          "name": "VTU_ROOT",
+          "render": [Function],
+          "setup": [Function],
+        },
+      },
+      "withProxy": null,
+    },
+    "_props": null,
+    "_uid": 0,
+    "component": [Function],
+    "config": {
+      "compilerOptions": {},
+      "errorHandler": undefined,
+      "globalProperties": {},
+      "isNativeTag": [Function],
+      "optionMergeStrategies": {},
+      "performance": false,
+      "warnHandler": undefined,
+    },
+    "directive": [Function],
+    "mixin": [Function],
+    "mount": [Function],
+    "provide": [Function],
+    "runWithContext": [Function],
+    "unmount": [Function],
+    "use": [Function],
+    "version": "3.4.14",
+  },
+  "__setProps": [Function],
+  "cleanUpCallbacks": [
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+  ],
+  "componentVM": {},
+  "isDisabled": [Function],
+  "rootVM": {
+    "VTU_COMPONENT": {},
+  },
+  "wrapperElement": <nuxt-link
+    class="projectSummaryCard"
+    data-test="projectCard"
+    data-v-7b12e235=""
+    to="[object Object]"
+  >
+    <div
+      class="projectSummaryCard__header"
+      data-v-7b12e235=""
+    >
+      <p
+        class="projectSummaryCard__title"
+        data-test="projectCard-title"
+        data-v-7b12e235=""
+      >
+        Title
+      </p>
+    </div>
+    <div
+      class="projectSummaryCard__content"
+      data-v-7b12e235=""
+    >
+      <div
+        class="projectSummaryCard__summary"
+        data-v-7b12e235=""
+      >
+         Project Number: 
+        <span
+          data-v-7b12e235=""
+        >
+          123
+        </span>
+      </div>
+      <div
+        class="projectSummaryCard__summary"
+        data-v-7b12e235=""
+      >
+         Project Start Date: 
+        <span
+          data-v-7b12e235=""
+        >
+          2024-01-01
+        </span>
+      </div>
+      <div
+        class="projectSummaryCard__summary"
+        data-v-7b12e235=""
+      >
+         Project End Date: 
+        <span
+          data-v-7b12e235=""
+        >
+          2024-01-01
+        </span>
+      </div>
+      <div
+        class="projectSummaryCard__summary"
+        data-v-7b12e235=""
+      >
+         Last updated: 
+        <span
+          data-v-7b12e235=""
+        >
+          23-01-01
+        </span>
+      </div>
+      <div
+        class="projectSummaryCard__projectStatus"
+        data-test="projectCard-status"
+        data-v-7b12e235=""
+      >
+        <span
+          class="projectStatus projectStatus--completed"
+          data-v-7b12e235=""
+          data-v-c8efa418=""
+        >
+          <clientonly
+            data-v-c8efa418=""
+          >
+            <iconcss
+              class="icon"
+              data-v-c8efa418=""
+              name="streamline:interface-validation-check-circle-checkmark-addition-circle-success-check-validation-add-form"
+            />
+          </clientonly>
+           Completed
+        </span>
+      </div>
+    </div>
+  </nuxt-link>,
+}
+`;
+
+exports[`Project Summary Card > Without data > Should match the snapshot 1`] = `
+VueWrapper {
+  "__app": {
+    "_component": {
+      "name": "VTU_ROOT",
+      "render": [Function],
+      "setup": [Function],
+    },
+    "_container": <div
+      data-v-app=""
+    >
+      <div
+        class="card"
+        data-test="projectCard-loading"
+        data-v-7b12e235=""
+        data-v-b725e87d=""
+      >
+        <clientonly
+          data-v-b725e87d=""
+          fallback="Loading..."
+        >
+          <iconcss
+            class="icon"
+            data-v-b725e87d=""
+            name="eos-icons:bubble-loading"
+          />
+        </clientonly>
+      </div>
+    </div>,
+    "_context": {
+      "app": [Circular],
+      "components": {
+        "transition": {
+          "name": "transition",
+        },
+        "transition-group": {
+          "name": "transition-group",
+        },
+      },
+      "config": {
+        "compilerOptions": {},
+        "errorHandler": undefined,
+        "globalProperties": {},
+        "isNativeTag": [Function],
+        "optionMergeStrategies": {},
+        "performance": false,
+        "warnHandler": undefined,
+      },
+      "directives": {},
+      "emitsCache": WeakMap {},
+      "mixins": [
+        {
+          "beforeCreate": [Function],
+        },
+      ],
+      "optionsCache": WeakMap {},
+      "propsCache": WeakMap {},
+      "provides": {},
+      "reload": [Function],
+    },
+    "_instance": {
+      "a": null,
+      "accessCache": {},
+      "appContext": {
+        "app": [Circular],
+        "components": {
+          "transition": {
+            "name": "transition",
+          },
+          "transition-group": {
+            "name": "transition-group",
+          },
+        },
+        "config": {
+          "compilerOptions": {},
+          "errorHandler": undefined,
+          "globalProperties": {},
+          "isNativeTag": [Function],
+          "optionMergeStrategies": {},
+          "performance": false,
+          "warnHandler": undefined,
+        },
+        "directives": {},
+        "emitsCache": WeakMap {},
+        "mixins": [
+          {
+            "beforeCreate": [Function],
+          },
+        ],
+        "optionsCache": WeakMap {},
+        "propsCache": WeakMap {},
+        "provides": {},
+        "reload": [Function],
+      },
+      "asyncDep": null,
+      "asyncResolved": false,
+      "attrs": {},
+      "attrsProxy": null,
+      "bc": null,
+      "bm": null,
+      "bu": null,
+      "bum": null,
+      "c": null,
+      "components": null,
+      "ctx": {
+        "VTU_COMPONENT": {},
+      },
+      "da": null,
+      "data": {},
+      "devtoolsRawSetupState": {
+        "VTU_COMPONENT": RefImpl {
+          "__v_isRef": true,
+          "__v_isShallow": false,
+          "_rawValue": {},
+          "_value": {},
+          "dep": undefined,
+        },
+      },
+      "directives": null,
+      "ec": null,
+      "effect": ReactiveEffect {
+        "_depsLength": 9,
+        "_dirtyLevel": 0,
+        "_runnings": 0,
+        "_shouldSchedule": false,
+        "_trackId": 1,
+        "active": true,
+        "allowRecurse": true,
+        "deps": [
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+          Map {
+            [Circular] => 1,
+          },
+        ],
+        "fn": [Function],
+        "onTrack": undefined,
+        "onTrigger": undefined,
+        "scheduler": [Function],
+        "trigger": [Function],
+      },
+      "emit": [Function],
+      "emitsOptions": null,
+      "emitted": null,
+      "exposeProxy": null,
+      "exposed": null,
+      "inheritAttrs": undefined,
+      "isDeactivated": false,
+      "isMounted": true,
+      "isUnmounted": false,
+      "m": null,
+      "next": null,
+      "parent": null,
+      "props": {},
+      "propsDefaults": {},
+      "propsOptions": [
+        {},
+        [],
+      ],
+      "provides": {},
+      "proxy": {
+        "VTU_COMPONENT": {},
+      },
+      "refs": {
+        "VTU_COMPONENT": {},
+      },
+      "render": [Function],
+      "renderCache": [],
+      "root": [Circular],
+      "rtc": null,
+      "rtg": null,
+      "scope": EffectScope {
+        "_active": true,
+        "cleanups": [],
+        "detached": true,
+        "effects": [
+          ReactiveEffect {
+            "_depsLength": 9,
+            "_dirtyLevel": 0,
+            "_runnings": 0,
+            "_shouldSchedule": false,
+            "_trackId": 1,
+            "active": true,
+            "allowRecurse": true,
+            "deps": [
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+              Map {
+                [Circular] => 1,
+              },
+            ],
+            "fn": [Function],
+            "onTrack": undefined,
+            "onTrigger": undefined,
+            "scheduler": [Function],
+            "trigger": [Function],
+          },
+        ],
+        "parent": undefined,
+      },
+      "setupContext": null,
+      "setupState": {
+        "VTU_COMPONENT": {},
+      },
+      "slots": {},
+      "slotsProxy": null,
+      "sp": null,
+      "subTree": {
+        "__v_isVNode": true,
+        "__v_skip": true,
+        "anchor": null,
+        "appContext": null,
+        "children": null,
+        "component": {
+          "a": null,
+          "accessCache": {},
+          "appContext": {
+            "app": [Circular],
+            "components": {
+              "transition": {
+                "name": "transition",
+              },
+              "transition-group": {
+                "name": "transition-group",
+              },
+            },
+            "config": {
+              "compilerOptions": {},
+              "errorHandler": undefined,
+              "globalProperties": {},
+              "isNativeTag": [Function],
+              "optionMergeStrategies": {},
+              "performance": false,
+              "warnHandler": undefined,
+            },
+            "directives": {},
+            "emitsCache": WeakMap {},
+            "mixins": [
+              {
+                "beforeCreate": [Function],
+              },
+            ],
+            "optionsCache": WeakMap {},
+            "propsCache": WeakMap {},
+            "provides": {},
+            "reload": [Function],
+          },
+          "asyncDep": null,
+          "asyncResolved": false,
+          "attrs": {},
+          "attrsProxy": null,
+          "bc": null,
+          "bm": null,
+          "bu": null,
+          "bum": null,
+          "c": null,
+          "components": {},
+          "ctx": {
+            "acronym": undefined,
+            "endDateString": "2024-01-01",
+            "lastUpdated": "23-01-01",
+            "projectId": 123,
+            "startDateString": "2024-01-01",
+            "statusDescription": "Completed",
+            "title": "",
+            "website": undefined,
+          },
+          "da": null,
+          "data": {},
+          "devtoolsRawSetupState": {
+            "cardSkeleton": {
+              "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/loading/cardSkeleton.vue",
+              "__scopeId": "data-v-b725e87d",
+              "render": [Function],
+            },
+            "projectStatus": {
+              "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/chip/projectStatus.vue",
+              "__name": "projectStatus",
+              "__scopeId": "data-v-c8efa418",
+              "props": {
+                "statusDescription": {
+                  "required": true,
+                  "type": [Function],
+                },
+              },
+              "render": [Function],
+              "setup": [Function],
+            },
+          },
+          "directives": null,
+          "ec": null,
+          "effect": ReactiveEffect {
+            "_depsLength": 1,
+            "_dirtyLevel": 0,
+            "_runnings": 0,
+            "_shouldSchedule": false,
+            "_trackId": 1,
+            "active": true,
+            "allowRecurse": true,
+            "deps": [
+              Map {
+                [Circular] => 1,
+              },
+            ],
+            "fn": [Function],
+            "onTrack": undefined,
+            "onTrigger": undefined,
+            "scheduler": [Function],
+            "trigger": [Function],
+          },
+          "emit": [Function],
+          "emitsOptions": null,
+          "emitted": null,
+          "exposeProxy": {},
+          "exposed": {},
+          "inheritAttrs": undefined,
+          "isDeactivated": false,
+          "isMounted": true,
+          "isUnmounted": false,
+          "m": null,
+          "next": null,
+          "parent": [Circular],
+          "props": {
+            "acronym": undefined,
+            "endDateString": "2024-01-01",
+            "lastUpdated": "23-01-01",
+            "projectId": 123,
+            "startDateString": "2024-01-01",
+            "statusDescription": "Completed",
+            "title": "",
+            "website": undefined,
+          },
+          "propsDefaults": {},
+          "propsOptions": [
+            {
+              "acronym": {
+                "0": false,
+                "1": true,
+                "required": false,
+                "type": [Function],
+              },
+              "endDateString": {
+                "0": false,
+                "1": true,
+                "required": false,
+                "type": [Function],
+              },
+              "lastUpdated": {
+                "0": false,
+                "1": true,
+                "required": false,
+                "type": [Function],
+              },
+              "projectId": {
+                "0": false,
+                "1": true,
+                "required": true,
+                "type": [Function],
+              },
+              "startDateString": {
+                "0": false,
+                "1": true,
+                "required": false,
+                "type": [Function],
+              },
+              "statusDescription": {
+                "0": false,
+                "1": true,
+                "required": false,
+                "type": [Function],
+              },
+              "title": {
+                "0": false,
+                "1": true,
+                "required": true,
+                "type": [Function],
+              },
+              "website": {
+                "0": false,
+                "1": true,
+                "required": false,
+                "type": [Function],
+              },
+            },
+            [],
+          ],
+          "provides": {},
+          "proxy": {
+            "acronym": undefined,
+            "endDateString": "2024-01-01",
+            "lastUpdated": "23-01-01",
+            "projectId": 123,
+            "startDateString": "2024-01-01",
+            "statusDescription": "Completed",
+            "title": "",
+            "website": undefined,
+          },
+          "refs": {},
+          "render": [Function],
+          "renderCache": [],
+          "root": [Circular],
+          "rtc": null,
+          "rtg": null,
+          "scope": EffectScope {
+            "_active": true,
+            "cleanups": [],
+            "detached": true,
+            "effects": [
+              ReactiveEffect {
+                "_depsLength": 1,
+                "_dirtyLevel": 0,
+                "_runnings": 0,
+                "_shouldSchedule": false,
+                "_trackId": 1,
+                "active": true,
+                "allowRecurse": true,
+                "deps": [
+                  Map {
+                    [Circular] => 1,
+                  },
+                ],
+                "fn": [Function],
+                "onTrack": undefined,
+                "onTrigger": undefined,
+                "scheduler": [Function],
+                "trigger": [Function],
+              },
+            ],
+            "parent": undefined,
+          },
+          "setupContext": {
+            "attrs": {},
+            "emit": [Function],
+            "expose": [Function],
+            "slots": {},
+          },
+          "setupState": {
+            "cardSkeleton": {
+              "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/loading/cardSkeleton.vue",
+              "__scopeId": "data-v-b725e87d",
+              "render": [Function],
+            },
+            "projectStatus": {
+              "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/chip/projectStatus.vue",
+              "__name": "projectStatus",
+              "__scopeId": "data-v-c8efa418",
+              "props": {
+                "statusDescription": {
+                  "required": true,
+                  "type": [Function],
+                },
+              },
+              "render": [Function],
+              "setup": [Function],
+            },
+          },
+          "slots": {},
+          "slotsProxy": {},
+          "sp": null,
+          "subTree": {
+            "__v_isVNode": true,
+            "__v_skip": true,
+            "anchor": null,
+            "appContext": null,
+            "children": null,
+            "component": {
+              "a": null,
+              "accessCache": {},
+              "appContext": {
+                "app": [Circular],
+                "components": {
+                  "transition": {
+                    "name": "transition",
+                  },
+                  "transition-group": {
+                    "name": "transition-group",
+                  },
+                },
+                "config": {
+                  "compilerOptions": {},
+                  "errorHandler": undefined,
+                  "globalProperties": {},
+                  "isNativeTag": [Function],
+                  "optionMergeStrategies": {},
+                  "performance": false,
+                  "warnHandler": undefined,
+                },
+                "directives": {},
+                "emitsCache": WeakMap {},
+                "mixins": [
+                  {
+                    "beforeCreate": [Function],
+                  },
+                ],
+                "optionsCache": WeakMap {},
+                "propsCache": WeakMap {},
+                "provides": {},
+                "reload": [Function],
+              },
+              "asyncDep": null,
+              "asyncResolved": false,
+              "attrs": {
+                "data-test": "projectCard-loading",
+              },
+              "attrsProxy": null,
+              "bc": null,
+              "bm": null,
+              "bu": null,
+              "bum": null,
+              "c": null,
+              "components": null,
+              "ctx": {},
+              "da": null,
+              "data": {},
+              "directives": null,
+              "ec": null,
+              "effect": ReactiveEffect {
+                "_depsLength": 0,
+                "_dirtyLevel": 0,
+                "_runnings": 0,
+                "_shouldSchedule": false,
+                "_trackId": 1,
+                "active": true,
+                "allowRecurse": true,
+                "deps": [],
+                "fn": [Function],
+                "onTrack": undefined,
+                "onTrigger": undefined,
+                "scheduler": [Function],
+                "trigger": [Function],
+              },
+              "emit": [Function],
+              "emitsOptions": null,
+              "emitted": null,
+              "exposeProxy": null,
+              "exposed": null,
+              "inheritAttrs": undefined,
+              "isDeactivated": false,
+              "isMounted": true,
+              "isUnmounted": false,
+              "m": null,
+              "next": null,
+              "parent": [Circular],
+              "props": {},
+              "propsDefaults": {},
+              "propsOptions": [
+                {},
+                [],
+              ],
+              "provides": {},
+              "proxy": {},
+              "refs": {},
+              "render": [Function],
+              "renderCache": [],
+              "root": [Circular],
+              "rtc": null,
+              "rtg": null,
+              "scope": EffectScope {
+                "_active": true,
+                "cleanups": [],
+                "detached": true,
+                "effects": [
+                  ReactiveEffect {
+                    "_depsLength": 0,
+                    "_dirtyLevel": 0,
+                    "_runnings": 0,
+                    "_shouldSchedule": false,
+                    "_trackId": 1,
+                    "active": true,
+                    "allowRecurse": true,
+                    "deps": [],
+                    "fn": [Function],
+                    "onTrack": undefined,
+                    "onTrigger": undefined,
+                    "scheduler": [Function],
+                    "trigger": [Function],
+                  },
+                ],
+                "parent": undefined,
+              },
+              "setupContext": null,
+              "setupState": {},
+              "slots": {},
+              "slotsProxy": null,
+              "sp": null,
+              "subTree": {
+                "__v_isVNode": true,
+                "__v_skip": true,
+                "anchor": null,
+                "appContext": null,
+                "ce": undefined,
+                "children": [
+                  {
+                    "__v_isVNode": true,
+                    "__v_skip": true,
+                    "anchor": null,
+                    "appContext": null,
+                    "children": [
+                      {
+                        "__v_isVNode": true,
+                        "__v_skip": true,
+                        "anchor": null,
+                        "appContext": null,
+                        "children": null,
+                        "component": null,
+                        "ctx": [Circular],
+                        "dirs": null,
+                        "dynamicChildren": null,
+                        "dynamicProps": null,
+                        "el": <iconcss
+                          class="icon"
+                          data-v-b725e87d=""
+                          name="eos-icons:bubble-loading"
+                        />,
+                        "key": null,
+                        "patchFlag": 0,
+                        "props": {
+                          "class": "icon",
+                          "name": "eos-icons:bubble-loading",
+                        },
+                        "ref": null,
+                        "scopeId": "data-v-b725e87d",
+                        "shapeFlag": 1,
+                        "slotScopeIds": null,
+                        "ssContent": null,
+                        "ssFallback": null,
+                        "staticCount": 0,
+                        "suspense": null,
+                        "target": null,
+                        "targetAnchor": null,
+                        "transition": null,
+                        "type": "IconCSS",
+                      },
+                    ],
+                    "component": null,
+                    "ctx": [Circular],
+                    "dirs": null,
+                    "dynamicChildren": null,
+                    "dynamicProps": null,
+                    "el": <clientonly
+                      data-v-b725e87d=""
+                      fallback="Loading..."
+                    >
+                      <iconcss
+                        class="icon"
+                        data-v-b725e87d=""
+                        name="eos-icons:bubble-loading"
+                      />
+                    </clientonly>,
+                    "key": null,
+                    "patchFlag": 0,
+                    "props": {
+                      "fallback": "Loading...",
+                    },
+                    "ref": null,
+                    "scopeId": "data-v-b725e87d",
+                    "shapeFlag": 17,
+                    "slotScopeIds": null,
+                    "ssContent": null,
+                    "ssFallback": null,
+                    "staticCount": 0,
+                    "suspense": null,
+                    "target": null,
+                    "targetAnchor": null,
+                    "transition": null,
+                    "type": "ClientOnly",
+                  },
+                ],
+                "component": null,
+                "ctx": [Circular],
+                "dirs": null,
+                "dynamicChildren": [],
+                "dynamicProps": null,
+                "el": <div
+                  class="card"
+                  data-test="projectCard-loading"
+                  data-v-7b12e235=""
+                  data-v-b725e87d=""
+                >
+                  <clientonly
+                    data-v-b725e87d=""
+                    fallback="Loading..."
+                  >
+                    <iconcss
+                      class="icon"
+                      data-v-b725e87d=""
+                      name="eos-icons:bubble-loading"
+                    />
+                  </clientonly>
+                </div>,
+                "key": null,
+                "patchFlag": 16,
+                "props": {
+                  "class": "card",
+                  "data-test": "projectCard-loading",
+                },
+                "ref": null,
+                "scopeId": "data-v-b725e87d",
+                "shapeFlag": 17,
+                "slotScopeIds": null,
+                "ssContent": null,
+                "ssFallback": null,
+                "staticCount": 0,
+                "suspense": null,
+                "target": null,
+                "targetAnchor": null,
+                "transition": null,
+                "type": "div",
+              },
+              "suspense": null,
+              "suspenseId": 0,
+              "type": {
+                "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/loading/cardSkeleton.vue",
+                "__scopeId": "data-v-b725e87d",
+                "render": [Function],
+              },
+              "u": null,
+              "uid": 5,
+              "um": null,
+              "update": [Function],
+              "vnode": [Circular],
+              "withProxy": null,
+            },
+            "ctx": [Circular],
+            "dirs": null,
+            "dynamicChildren": [],
+            "dynamicProps": null,
+            "el": <div
+              class="card"
+              data-test="projectCard-loading"
+              data-v-7b12e235=""
+              data-v-b725e87d=""
+            >
+              <clientonly
+                data-v-b725e87d=""
+                fallback="Loading..."
+              >
+                <iconcss
+                  class="icon"
+                  data-v-b725e87d=""
+                  name="eos-icons:bubble-loading"
+                />
+              </clientonly>
+            </div>,
+            "key": 0,
+            "patchFlag": 0,
+            "props": {
+              "data-test": "projectCard-loading",
+              "key": 0,
+            },
+            "ref": null,
+            "scopeId": "data-v-7b12e235",
+            "shapeFlag": 4,
+            "slotScopeIds": null,
+            "ssContent": null,
+            "ssFallback": null,
+            "staticCount": 0,
+            "suspense": null,
+            "target": null,
+            "targetAnchor": null,
+            "transition": null,
+            "type": {
+              "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/loading/cardSkeleton.vue",
+              "__scopeId": "data-v-b725e87d",
+              "render": [Function],
+            },
+          },
+          "suspense": null,
+          "suspenseId": 0,
+          "type": {
+            "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/projectSearchResults/projectSummaryCard.vue",
+            "__name": "projectSummaryCard",
+            "__scopeId": "data-v-7b12e235",
+            "components": {},
+            "props": {
+              "acronym": {
+                "required": false,
+                "type": [Function],
+              },
+              "endDateString": {
+                "required": false,
+                "type": [Function],
+              },
+              "lastUpdated": {
+                "required": false,
+                "type": [Function],
+              },
+              "projectId": {
+                "required": true,
+                "type": [Function],
+              },
+              "startDateString": {
+                "required": false,
+                "type": [Function],
+              },
+              "statusDescription": {
+                "required": false,
+                "type": [Function],
+              },
+              "title": {
+                "required": true,
+                "type": [Function],
+              },
+              "website": {
+                "required": false,
+                "type": [Function],
+              },
+            },
+            "render": [Function],
+            "setup": [Function],
+            "stubs": {
+              "ClientOnly": "<div><slot /><div>",
+              "IconCSS": "<div><slot /><div>",
+              "NuxtLink": {
+                "compatConfig": {
+                  "MODE": 3,
+                },
+                "name": "RouterLinkStub",
+                "props": {
+                  "custom": {
+                    "default": false,
+                    "type": [Function],
+                  },
+                  "to": {
+                    "required": true,
+                    "type": [
+                      [Function],
+                      [Function],
+                    ],
+                  },
+                },
+                "render": [Function],
+              },
+            },
+          },
+          "u": null,
+          "uid": 4,
+          "um": null,
+          "update": [Function],
+          "vnode": [Circular],
+          "withProxy": null,
+        },
+        "ctx": [Circular],
+        "dirs": null,
+        "dynamicChildren": null,
+        "dynamicProps": null,
+        "el": <div
+          class="card"
+          data-test="projectCard-loading"
+          data-v-7b12e235=""
+          data-v-b725e87d=""
+        >
+          <clientonly
+            data-v-b725e87d=""
+            fallback="Loading..."
+          >
+            <iconcss
+              class="icon"
+              data-v-b725e87d=""
+              name="eos-icons:bubble-loading"
+            />
+          </clientonly>
+        </div>,
+        "key": null,
+        "patchFlag": 0,
+        "props": {
+          "endDateString": "2024-01-01",
+          "lastUpdated": "23-01-01",
+          "projectId": 123,
+          "ref": "VTU_COMPONENT",
+          "startDateString": "2024-01-01",
+          "statusDescription": "Completed",
+          "title": "",
+        },
+        "ref": {
+          "f": false,
+          "i": [Circular],
+          "k": undefined,
+          "r": "VTU_COMPONENT",
+        },
+        "scopeId": null,
+        "shapeFlag": 4,
+        "slotScopeIds": null,
+        "ssContent": null,
+        "ssFallback": null,
+        "staticCount": 0,
+        "suspense": null,
+        "target": null,
+        "targetAnchor": null,
+        "transition": null,
+        "type": {
+          "__file": "/Users/laurencebarnes/Dev/nasa-techport/components/projectSearchResults/projectSummaryCard.vue",
+          "__name": "projectSummaryCard",
+          "__scopeId": "data-v-7b12e235",
+          "components": {},
+          "props": {
+            "acronym": {
+              "required": false,
+              "type": [Function],
+            },
+            "endDateString": {
+              "required": false,
+              "type": [Function],
+            },
+            "lastUpdated": {
+              "required": false,
+              "type": [Function],
+            },
+            "projectId": {
+              "required": true,
+              "type": [Function],
+            },
+            "startDateString": {
+              "required": false,
+              "type": [Function],
+            },
+            "statusDescription": {
+              "required": false,
+              "type": [Function],
+            },
+            "title": {
+              "required": true,
+              "type": [Function],
+            },
+            "website": {
+              "required": false,
+              "type": [Function],
+            },
+          },
+          "render": [Function],
+          "setup": [Function],
+          "stubs": {
+            "ClientOnly": "<div><slot /><div>",
+            "IconCSS": "<div><slot /><div>",
+            "NuxtLink": {
+              "compatConfig": {
+                "MODE": 3,
+              },
+              "name": "RouterLinkStub",
+              "props": {
+                "custom": {
+                  "default": false,
+                  "type": [Function],
+                },
+                "to": {
+                  "required": true,
+                  "type": [
+                    [Function],
+                    [Function],
+                  ],
+                },
+              },
+              "render": [Function],
+            },
+          },
+        },
+      },
+      "suspense": null,
+      "suspenseId": 0,
+      "type": {
+        "name": "VTU_ROOT",
+        "render": [Function],
+        "setup": [Function],
+      },
+      "u": null,
+      "uid": 3,
+      "um": null,
+      "update": [Function],
+      "vnode": {
+        "__v_isVNode": true,
+        "__v_skip": true,
+        "anchor": null,
+        "appContext": {
+          "app": [Circular],
+          "components": {
+            "transition": {
+              "name": "transition",
+            },
+            "transition-group": {
+              "name": "transition-group",
+            },
+          },
+          "config": {
+            "compilerOptions": {},
+            "errorHandler": undefined,
+            "globalProperties": {},
+            "isNativeTag": [Function],
+            "optionMergeStrategies": {},
+            "performance": false,
+            "warnHandler": undefined,
+          },
+          "directives": {},
+          "emitsCache": WeakMap {},
+          "mixins": [
+            {
+              "beforeCreate": [Function],
+            },
+          ],
+          "optionsCache": WeakMap {},
+          "propsCache": WeakMap {},
+          "provides": {},
+          "reload": [Function],
+        },
+        "children": null,
+        "component": [Circular],
+        "ctx": null,
+        "dirs": null,
+        "dynamicChildren": null,
+        "dynamicProps": null,
+        "el": <div
+          class="card"
+          data-test="projectCard-loading"
+          data-v-7b12e235=""
+          data-v-b725e87d=""
+        >
+          <clientonly
+            data-v-b725e87d=""
+            fallback="Loading..."
+          >
+            <iconcss
+              class="icon"
+              data-v-b725e87d=""
+              name="eos-icons:bubble-loading"
+            />
+          </clientonly>
+        </div>,
+        "key": null,
+        "patchFlag": 0,
+        "props": null,
+        "ref": null,
+        "scopeId": null,
+        "shapeFlag": 4,
+        "slotScopeIds": null,
+        "ssContent": null,
+        "ssFallback": null,
+        "staticCount": 0,
+        "suspense": null,
+        "target": null,
+        "targetAnchor": null,
+        "transition": null,
+        "type": {
+          "name": "VTU_ROOT",
+          "render": [Function],
+          "setup": [Function],
+        },
+      },
+      "withProxy": null,
+    },
+    "_props": null,
+    "_uid": 1,
+    "component": [Function],
+    "config": {
+      "compilerOptions": {},
+      "errorHandler": undefined,
+      "globalProperties": {},
+      "isNativeTag": [Function],
+      "optionMergeStrategies": {},
+      "performance": false,
+      "warnHandler": undefined,
+    },
+    "directive": [Function],
+    "mixin": [Function],
+    "mount": [Function],
+    "provide": [Function],
+    "runWithContext": [Function],
+    "unmount": [Function],
+    "use": [Function],
+    "version": "3.4.14",
+  },
+  "__setProps": [Function],
+  "cleanUpCallbacks": [
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+    [Function],
+  ],
+  "componentVM": {},
+  "isDisabled": [Function],
+  "rootVM": {
+    "VTU_COMPONENT": {},
+  },
+  "wrapperElement": <div
+    class="card"
+    data-test="projectCard-loading"
+    data-v-7b12e235=""
+    data-v-b725e87d=""
+  >
+    <clientonly
+      data-v-b725e87d=""
+      fallback="Loading..."
+    >
+      <iconcss
+        class="icon"
+        data-v-b725e87d=""
+        name="eos-icons:bubble-loading"
+      />
+    </clientonly>
+  </div>,
+}
+`;

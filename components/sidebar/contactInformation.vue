@@ -1,11 +1,12 @@
 <template>
-  <dt>{{ title }}:</dt>
+  <dt data-test="contactInfo-title">{{ title }}:</dt>
   <dd>
     <a
       v-for="{ fullName, primaryEmail, contactId } in contacts"
       :key="contactId"
       :href="`mailto://${primaryEmail}`"
       class="contactInfo"
+      data-test="contactInfo-contact"
       >{{ fullName }}</a
     >
   </dd>

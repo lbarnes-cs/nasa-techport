@@ -1,5 +1,5 @@
 <template>
-  <cardSkeleton v-if="!title" />
+  <cardSkeleton v-if="!title" data-test="projectCard-loading" />
   <nuxt-link
     v-else
     :to="{
@@ -9,9 +9,12 @@
       },
     }"
     class="projectSummaryCard"
+    data-test="projectCard"
   >
     <div class="projectSummaryCard__header">
-      <p class="projectSummaryCard__title">{{ title }}</p>
+      <p class="projectSummaryCard__title" data-test="projectCard-title">
+        {{ title }}
+      </p>
     </div>
 
     <div class="projectSummaryCard__content">
@@ -31,7 +34,11 @@
         Last updated: <span>{{ lastUpdated }}</span>
       </div>
 
-      <div v-if="statusDescription" class="projectSummaryCard__projectStatus">
+      <div
+        v-if="statusDescription"
+        class="projectSummaryCard__projectStatus"
+        data-test="projectCard-status"
+      >
         <projectStatus :status-description="statusDescription" />
       </div>
     </div>
@@ -39,8 +46,8 @@
 </template>
 
 <script setup lang="ts">
-import projectStatus from '@/components/chip/projectStatus';
 import cardSkeleton from '@/components/loading/cardSkeleton.vue';
+import projectStatus from '@/components/chip/projectStatus.vue';
 
 import type { ProjectSummary } from '@/types/ProjectSearchResponse';
 

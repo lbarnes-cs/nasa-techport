@@ -157,7 +157,7 @@
 
 <script setup>
 import contactInformation from '@/components/sidebar/contactInformation';
-import projectStatus from '@/components/chip/projectStatus';
+import projectStatus from '@/components/chip/projectStatus.vue';
 import loadingState from '@/components/loading/loadingState.vue';
 
 const pid = useRoute().params.pid;
